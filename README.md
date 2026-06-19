@@ -38,6 +38,19 @@ acc = matching.match_drawer_accessories("PB-AXISPRO-KPL550D1", loader.load_items
   których kalkulator jeszcze nie ma (min. wysokości korpusu per klasa,
   grubość boku 14 mm, próg relingu 284 mm).
 
+## Serwis HTTP (Faza 2)
+Cienka warstwa REST nad pakietem (`app.py`, FastAPI) — dla programów nie-Pythonowych
+i zdalnych. Read-only, bez logowania (zasób w sieci lokalnej). Port hosta **8014**.
+
+Endpointy:
+- `GET /health`
+- `GET /systems` , `GET /systems/{id}`
+- `GET /items?category=&system_id=` , `GET /items/{sku}` , `GET /items/{sku}/related`
+- `GET /compute/drawer?lw=&depth=&system_id=&h_class=&front_h=` (zamiast `depth` można podać `nl`)
+
+Lokalnie: `uvicorn app:app --reload --port 8000`
+Serwer: `docker compose up --build -d` (deploy automatyczny przez `.github/workflows/deploy.yml`).
+
 ## Znany rozjazd do naprawienia (Faza 3)
 W kalkulatorze logika szuflady jest w 3 miejscach i się różni:
 - `HardwareSystem` (tabela): dno `LW−75`, tył `LW−87` — POPRAWNE, tego używa ten moduł.

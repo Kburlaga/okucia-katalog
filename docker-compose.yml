@@ -1,0 +1,15 @@
+services:
+  okucia:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: okucia_service
+    restart: always
+    ports:
+      - "8014:8000"
+    networks:
+      - default
+
+networks:
+  default:
+    name: okucia_net
