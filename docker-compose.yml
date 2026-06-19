@@ -6,7 +6,7 @@ services:
     container_name: okucia_service
     restart: always
     ports:
-      - "8014:8000"
+      - "8015:8000"
     networks:
       - default
 

@@ -40,7 +40,7 @@ acc = matching.match_drawer_accessories("PB-AXISPRO-KPL550D1", loader.load_items
 
 ## Serwis HTTP (Faza 2)
 Cienka warstwa REST nad pakietem (`app.py`, FastAPI) — dla programów nie-Pythonowych
-i zdalnych. Read-only, bez logowania (zasób w sieci lokalnej). Port hosta **8014**.
+i zdalnych. Read-only, bez logowania (zasób w sieci lokalnej). Port hosta **8015**.
 
 Endpointy:
 - `GET /health`
