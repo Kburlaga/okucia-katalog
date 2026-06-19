@@ -52,3 +52,23 @@ def load_items(category=None, system_id=None):
 
 def get_item(sku):
     return next((it for it in _load_all_items() if it.get("sku") == sku), None)
+
+
+@lru_cache(maxsize=1)
+def load_hinge_systems():
+    """Zwraca dict {hinge_system_id: {...}} z hinge_systems.json."""
+    path = os.path.join(DATA_DIR, "hinge_systems.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_drawer_system_by_name(name):
+    """Wyszukuje system szuflad po polu `name` (np. 'GTV Axis Pro'). None gdy brak."""
+    return next((s for s in load_systems().values() if s.get("name") == name), None)
+
+
+def get_hinge_system_by_name(name):
+    """Wyszukuje system zawiasów po polu `name` (np. 'Blum Clip Top'). None gdy brak."""
+    return next((s for s in load_hinge_systems().values() if s.get("name") == name), None)

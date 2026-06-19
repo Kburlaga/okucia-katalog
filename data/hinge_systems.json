@@ -1,0 +1,20 @@
+{
+  "blum_clip_top": {
+    "id": "blum_clip_top",
+    "name": "Blum Clip Top",
+    "type": "hinge",
+    "puszka_offset": 22.0
+  },
+  "gtv_prestige": {
+    "id": "gtv_prestige",
+    "name": "GTV Prestige",
+    "type": "hinge",
+    "puszka_offset": 22.0
+  },
+  "hettich_sensys": {
+    "id": "hettich_sensys",
+    "name": "Hettich Sensys",
+    "type": "hinge",
+    "puszka_offset": 23.0
+  }
+}
