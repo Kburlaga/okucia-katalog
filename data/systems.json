@@ -1,0 +1,55 @@
+{
+  "gtv_axis_pro": {
+    "id": "gtv_axis_pro",
+    "name": "GTV Axis Pro",
+    "type": "drawer",
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "side_thickness_mm": 14.0,
+    "rail_required_above_front_mm": 284.0,
+    "available_nl_mm": [250, 300, 350, 400, 450, 500, 550, 600],
+    "h_classes": {
+      "A": {"nominal_mm": 86, "real_mm": 84, "min_carcass_height_mm": 115},
+      "B": {"nominal_mm": 120, "real_mm": 116, "min_carcass_height_mm": 147},
+      "C": {"nominal_mm": 168, "real_mm": 167, "min_carcass_height_mm": 198},
+      "D": {"nominal_mm": 200, "real_mm": 199, "min_carcass_height_mm": 230}
+    },
+    "synchro_rod_cut_formula": "LW-127",
+    "load_capacity_kg": 40,
+    "source": "GTV Axis Pro karta techniczna (12 str.) + Kalkulator_Stolarski_3 HardwareSystem"
+  },
+  "gtv_modern_box_pro": {
+    "id": "gtv_modern_box_pro",
+    "name": "GTV MODERN BOX PRO",
+    "type": "drawer",
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "side_thickness_mm": null,
+    "rail_required_above_front_mm": null,
+    "available_nl_mm": [250, 300, 350, 400, 450, 500, 550, 600],
+    "h_classes": null,
+    "load_capacity_kg": 40,
+    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane H-klas/płaszcza do uzupełnienia z karty MODERN BOX PRO)"
+  },
+  "blum_antaro": {
+    "id": "blum_antaro",
+    "name": "Blum Antaro",
+    "type": "drawer",
+    "offset_prowadnica": 37.0,
+    "front_fix_offset_internal": 46.0,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "side_thickness_mm": null,
+    "rail_required_above_front_mm": null,
+    "available_nl_mm": [270, 300, 350, 400, 450, 500, 550, 600],
+    "h_classes": null,
+    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane szczegółowe Blum do uzupełnienia z katalogu Blum)"
+  }
+}

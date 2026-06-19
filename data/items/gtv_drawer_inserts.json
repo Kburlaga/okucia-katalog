@@ -1,0 +1,707 @@
+[
+  {
+    "sku": "WK-SZ-AS-400-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 400mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        400
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 400,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-400-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 400mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        400
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 400,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-400-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 400mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        400
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 400,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-500-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 500mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        500
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 500,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-500-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 500mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        500
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 500,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-500-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 500mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        500
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 500,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-600-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 600mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        600
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 600,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-600-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 600mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        600
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 600,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-600-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 600mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        600
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 600,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-700-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 700mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        700
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 700,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-700-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 700mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        700
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 700,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-700-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 700mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        700
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 700,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-800-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 800mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        800
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 800,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-800-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 800mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        800
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 800,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-800-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 800mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        800
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 800,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-900-10",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 900mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 900,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-900-60",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 900mm antracyt",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "antracyt",
+      "color_en": "anthracite",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 900,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "WK-SZ-AS-900-20",
+    "category": "drawer_insert",
+    "name": "Wkład AXISPACE 900mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Wkład do szuflad AXISPACE",
+      "name_en": "Cutlery organizer AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "cutlery_tray",
+      "fits_drawer_width_mm": [
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 900,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "plastic",
+      "compartment_count": null,
+      "customizable": false
+    }
+  },
+  {
+    "sku": "MA-MATA-1-10",
+    "category": "drawer_insert",
+    "name": "Mata antypoślizgowa AXISPACE 5000x480mm biały",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Mata antypoślizgowa do szuflad AXISPACE",
+      "name_en": "Anti-slip mat for drawers AXISPACE",
+      "color_pl": "biały",
+      "color_en": "white",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "anti_slip_mat",
+      "fits_drawer_width_mm": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 480,
+      "depth_mm": 5000,
+      "height_mm": null,
+      "material": "silicone",
+      "customizable": true
+    }
+  },
+  {
+    "sku": "MA-MATA-1-60",
+    "category": "drawer_insert",
+    "name": "Mata antypoślizgowa AXISPACE 5000x480mm szary",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Mata antypoślizgowa do szuflad AXISPACE",
+      "name_en": "Anti-slip mat for drawers AXISPACE",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "anti_slip_mat",
+      "fits_drawer_width_mm": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 480,
+      "depth_mm": 5000,
+      "height_mm": null,
+      "material": "silicone",
+      "customizable": true
+    }
+  },
+  {
+    "sku": "MA-MATA-1-20",
+    "category": "drawer_insert",
+    "name": "Mata antypoślizgowa AXISPACE 5000x480mm czarny",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "series": "AXISPACE",
+      "name_pl": "Mata antypoślizgowa do szuflad AXISPACE",
+      "name_en": "Anti-slip mat for drawers AXISPACE",
+      "color_pl": "czarny",
+      "color_en": "black",
+      "source_pdf": "Kitchen-Accessories-PL_EN.pdf",
+      "source_page": 125,
+      "insert_type": "anti_slip_mat",
+      "fits_drawer_width_mm": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "fits_drawer_depth_mm": null,
+      "compatible_drawer_systems": [
+        "gtv_axis_pro",
+        "gtv_modern_box_pro"
+      ],
+      "compatible_h_class": "A",
+      "width_mm": 480,
+      "depth_mm": 5000,
+      "height_mm": null,
+      "material": "silicone",
+      "customizable": true
+    }
+  }
+]
