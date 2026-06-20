@@ -72,3 +72,13 @@ def get_drawer_system_by_name(name):
 def get_hinge_system_by_name(name):
     """Wyszukuje system zawiasów po polu `name` (np. 'Blum Clip Top'). None gdy brak."""
     return next((s for s in load_hinge_systems().values() if s.get("name") == name), None)
+
+
+def resolve_system_id(name_or_id):
+    """Zwraca id systemu szuflad. Przyjmuje gotowe id (np. 'gtv_axis_pro') albo
+    nazwę (np. 'GTV Axis Pro'). None gdy nie rozpoznano."""
+    systems = load_systems()
+    if name_or_id in systems:
+        return name_or_id
+    found = get_drawer_system_by_name(name_or_id)
+    return found["id"] if found else None

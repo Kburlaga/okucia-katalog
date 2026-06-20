@@ -73,3 +73,51 @@ def compute_drawer_parts(LW, NL, system_id="gtv_axis_pro", h_class="D",
         "min_carcass_height": min_carcass_h,
         "rail_required": rail_required,
     }
+
+
+def pick_h_class(opening_mm, system_id="gtv_axis_pro"):
+    """Dobiera klasę szuflady wg DOSTĘPNEJ wysokości w korpusie i minimalnej
+    wysokości korpusu z danych technicznych (`min_carcass_height_mm`).
+
+    Zwraca id najwyższej klasy, która się mieści (min_carcass_height ≤ opening),
+    albo None gdy nawet najniższa się nie mieści / brak danych klas.
+    """
+    classes = (loader.get_system(system_id).get("h_classes") or {})
+    fitting = [
+        (cid, c["min_carcass_height_mm"])
+        for cid, c in classes.items()
+        if c.get("min_carcass_height_mm") is not None
+        and c["min_carcass_height_mm"] <= opening_mm
+    ]
+    if not fitting:
+        return None
+    return max(fitting, key=lambda kv: kv[1])[0]
+
+
+def compute_drawer_for_opening(LW, depth, opening_mm, system_id="gtv_axis_pro"):
+    """Pełny dobór dla jednej szuflady w sekcji: NL z głębokości + klasa z miejsca
+    w korpusie + wymiary formatek.
+
+    Zwraca dict z wymiarami i `fits=True`, albo:
+      - `fits=False` + `reason`/`min_required_mm` gdy szuflada się nie mieści,
+      - `fits=None` + `reason` gdy system nie ma danych klas (do fallbacku).
+    """
+    sid = loader.resolve_system_id(system_id) or system_id
+    sysd = loader.get_system(sid)
+    nl = pick_nl(depth, sid)
+    classes = sysd.get("h_classes") or {}
+    if not classes:
+        return {"fits": None, "system_id": sid, "NL": nl,
+                "reason": f"System {sid} nie ma danych klas wysokości"}
+    hc = pick_h_class(opening_mm, sid)
+    if hc is None:
+        min_needed = min(c["min_carcass_height_mm"] for c in classes.values()
+                         if c.get("min_carcass_height_mm") is not None)
+        return {"fits": False, "system_id": sid, "NL": nl,
+                "min_required_mm": min_needed,
+                "reason": (f"Na szufladę przypada {opening_mm:.0f} mm, a najniższa klasa "
+                           f"wymaga min. {min_needed:.0f} mm wysokości korpusu")}
+    parts = compute_drawer_parts(LW=LW, NL=nl, system_id=sid, h_class=hc,
+                                 front_height_mm=opening_mm)
+    parts["fits"] = True
+    return parts
