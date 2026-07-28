@@ -54,7 +54,9 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "pricing_sku_prefix": "GTV-PRO",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
@@ -89,7 +91,9 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "pricing_sku_prefix": "GTV-MBPRO",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
   },
   "blum_antaro": {
     "id": "blum_antaro",
@@ -123,6 +127,8 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "pricing_sku_prefix": "BLUM-TANDEMBOX",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
   }
 }
