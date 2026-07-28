@@ -1,0 +1,58 @@
+[
+  {
+    "sku": "ZAW-CLIP110",
+    "category": "hinge",
+    "name": "Zawias puszkowy 110°",
+    "system_id": "gtv_prestige",
+    "price": 8.5,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione z accessoriesCatalog.ts (hinge_std) oraz pricing.DEFAULT_PRICING (ZAW-CLIP110). puszka_offset_mm zgodny z hinge_systems.json/gtv_prestige. NIEZWERYFIKOWANE z kartą producenta.",
+      "angle_deg": 110,
+      "cup_diameter_mm": 35,
+      "cup_depth_mm": 12.5,
+      "puszka_offset_mm": 22.0,
+      "screw_holes_pitch_mm": 32,
+      "overlay_type": "nakladany",
+      "min_overlay_mm": 0,
+      "max_overlay_mm": 18,
+      "min_door_thickness_mm": 16,
+      "max_door_thickness_mm": 22,
+      "soft_close": true,
+      "mounting": "clip",
+      "manufacturer": null,
+      "series": null,
+      "ui_model": "box",
+      "ui_color": "#a8a29e",
+      "description_pl": "Zawias na puszce fi35mm, standard do frontów nakładanych."
+    }
+  },
+  {
+    "sku": "ZAW-NAROZNY-45",
+    "category": "hinge",
+    "name": "Zawias kątowy narożny 45°",
+    "system_id": "gtv_prestige",
+    "price": 0.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione z accessoriesCatalog.ts (hinge_corner). Brak pozycji w cenniku aplikacji — cena 0.0 do uzupełnienia. NIEZWERYFIKOWANE.",
+      "angle_deg": 45,
+      "cup_diameter_mm": 35,
+      "cup_depth_mm": 12.5,
+      "puszka_offset_mm": 22.0,
+      "screw_holes_pitch_mm": 32,
+      "overlay_type": "narozny",
+      "min_overlay_mm": null,
+      "max_overlay_mm": null,
+      "min_door_thickness_mm": 16,
+      "max_door_thickness_mm": 22,
+      "soft_close": true,
+      "mounting": "clip",
+      "manufacturer": null,
+      "series": null,
+      "ui_model": "box",
+      "ui_color": "#a8a29e",
+      "description_pl": "Zawias do drzwi narożnych, stosowany w zabudowach narożnych."
+    }
+  }
+]

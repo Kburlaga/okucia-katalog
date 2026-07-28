@@ -12,16 +12,49 @@
     "cut_back_width_reduction": 87.0,
     "side_thickness_mm": 14.0,
     "rail_required_above_front_mm": 284.0,
-    "available_nl_mm": [250, 300, 350, 400, 450, 500, 550, 600],
+    "available_nl_mm": [
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      550,
+      600
+    ],
     "h_classes": {
-      "A": {"nominal_mm": 86, "real_mm": 84, "min_carcass_height_mm": 115},
-      "B": {"nominal_mm": 120, "real_mm": 116, "min_carcass_height_mm": 147},
-      "C": {"nominal_mm": 168, "real_mm": 167, "min_carcass_height_mm": 198},
-      "D": {"nominal_mm": 200, "real_mm": 199, "min_carcass_height_mm": 230}
+      "A": {
+        "nominal_mm": 86,
+        "real_mm": 84,
+        "min_carcass_height_mm": 115
+      },
+      "B": {
+        "nominal_mm": 120,
+        "real_mm": 116,
+        "min_carcass_height_mm": 147
+      },
+      "C": {
+        "nominal_mm": 168,
+        "real_mm": 167,
+        "min_carcass_height_mm": 198
+      },
+      "D": {
+        "nominal_mm": 200,
+        "real_mm": 199,
+        "min_carcass_height_mm": 230
+      }
     },
     "synchro_rod_cut_formula": "LW-127",
     "load_capacity_kg": 40,
-    "source": "GTV Axis Pro karta techniczna (12 str.) + Kalkulator_Stolarski_3 HardwareSystem"
+    "source": "GTV Axis Pro karta techniczna (12 str.) + Kalkulator_Stolarski_3 HardwareSystem",
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "drilling_verified": false,
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
@@ -36,10 +69,27 @@
     "cut_back_width_reduction": 87.0,
     "side_thickness_mm": null,
     "rail_required_above_front_mm": null,
-    "available_nl_mm": [250, 300, 350, 400, 450, 500, 550, 600],
+    "available_nl_mm": [
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      550,
+      600
+    ],
     "h_classes": null,
     "load_capacity_kg": 40,
-    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane H-klas/płaszcza do uzupełnienia z karty MODERN BOX PRO)"
+    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane H-klas/płaszcza do uzupełnienia z karty MODERN BOX PRO)",
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "drilling_verified": false,
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
   },
   "blum_antaro": {
     "id": "blum_antaro",
@@ -54,8 +104,25 @@
     "cut_back_width_reduction": 87.0,
     "side_thickness_mm": null,
     "rail_required_above_front_mm": null,
-    "available_nl_mm": [270, 300, 350, 400, 450, 500, 550, 600],
+    "available_nl_mm": [
+      270,
+      300,
+      350,
+      400,
+      450,
+      500,
+      550,
+      600
+    ],
     "h_classes": null,
-    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane szczegółowe Blum do uzupełnienia z katalogu Blum)"
+    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane szczegółowe Blum do uzupełnienia z katalogu Blum)",
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "drilling_verified": false,
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow."
   }
 }

@@ -3,18 +3,96 @@
     "id": "blum_clip_top",
     "name": "Blum Clip Top",
     "type": "hinge",
-    "puszka_offset": 22.0
+    "puszka_offset": 22.0,
+    "hinge_y_inset_mm": 100.0,
+    "hinge_count_thresholds": [
+      [
+        900,
+        2
+      ],
+      [
+        1600,
+        3
+      ],
+      [
+        2000,
+        4
+      ],
+      [
+        2400,
+        5
+      ],
+      [
+        null,
+        6
+      ]
+    ],
+    "cup_diameter_mm": 35.0,
+    "verified": false,
+    "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow. oraz module_geometry.hinge_count (progi warsztatowe)."
   },
   "gtv_prestige": {
     "id": "gtv_prestige",
     "name": "GTV Prestige",
     "type": "hinge",
-    "puszka_offset": 22.0
+    "puszka_offset": 22.0,
+    "hinge_y_inset_mm": 100.0,
+    "hinge_count_thresholds": [
+      [
+        900,
+        2
+      ],
+      [
+        1600,
+        3
+      ],
+      [
+        2000,
+        4
+      ],
+      [
+        2400,
+        5
+      ],
+      [
+        null,
+        6
+      ]
+    ],
+    "cup_diameter_mm": 35.0,
+    "verified": false,
+    "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow. oraz module_geometry.hinge_count (progi warsztatowe)."
   },
   "hettich_sensys": {
     "id": "hettich_sensys",
     "name": "Hettich Sensys",
     "type": "hinge",
-    "puszka_offset": 23.0
+    "puszka_offset": 23.0,
+    "hinge_y_inset_mm": 100.0,
+    "hinge_count_thresholds": [
+      [
+        900,
+        2
+      ],
+      [
+        1600,
+        3
+      ],
+      [
+        2000,
+        4
+      ],
+      [
+        2400,
+        5
+      ],
+      [
+        null,
+        6
+      ]
+    ],
+    "cup_diameter_mm": 35.0,
+    "verified": false,
+    "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow. oraz module_geometry.hinge_count (progi warsztatowe)."
   }
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "sku": "UCHWYT-RELING-128",
+    "category": "handle",
+    "name": "Uchwyt relingowy 128mm",
+    "system_id": null,
+    "price": 15.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/src/accessoriesCatalog.ts (handle_reling) oraz pricing.DEFAULT_PRICING. NIEZWERYFIKOWANE z kartą producenta.",
+      "handle_type": "reling",
+      "hole_pitch_mm": 128,
+      "protrusion_mm": 32,
+      "mounting_hole_diameter_mm": 5,
+      "length_mm": 148,
+      "width_mm": 12,
+      "height_mm": 12,
+      "mounting_screw_thread": "M4",
+      "mounting_type": "screw_through_front",
+      "finish": null,
+      "material": null,
+      "manufacturer": null,
+      "ui_model": "u_shape",
+      "ui_color": "#94a3b8",
+      "description_pl": "Uchwyt typu U montowany do frontu na dwóch śrubach."
+    }
+  },
+  {
+    "sku": "UCHWYT-GALKA",
+    "category": "knob",
+    "name": "Gałka punktowa",
+    "system_id": null,
+    "price": 8.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione 1:1 z accessoriesCatalog.ts (handle_knob) oraz pricing.DEFAULT_PRICING. NIEZWERYFIKOWANE z kartą producenta.",
+      "diameter_mm": 30,
+      "height_mm": 30,
+      "protrusion_mm": 25,
+      "mounting_hole_diameter_mm": 5,
+      "mounting_thread": "M4",
+      "finish": null,
+      "material": null,
+      "manufacturer": null,
+      "ui_model": "box",
+      "ui_color": "#78716c",
+      "description_pl": "Pojedyncza gałka montowana na jednym otworze."
+    }
+  },
+  {
+    "sku": "UCHWYT-CPULL-200",
+    "category": "handle",
+    "name": "Uchwyt krawędziowy C-pull 200mm",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione z accessoriesCatalog.ts (handle_edge). Brak pozycji w cenniku aplikacji — cena 0.0 do uzupełnienia. NIEZWERYFIKOWANE.",
+      "handle_type": "edge_c_pull",
+      "length_mm": 200,
+      "groove_depth_mm": 8,
+      "groove_width_mm": 18,
+      "hole_pitch_mm": null,
+      "protrusion_mm": null,
+      "mounting_type": "edge_milled",
+      "finish": null,
+      "material": null,
+      "manufacturer": null,
+      "ui_model": "box",
+      "ui_color": "#44403c",
+      "description_pl": "Uchwyt montowany na górnej krawędzi frontu. Wymaga frezowania."
+    }
+  }
+]

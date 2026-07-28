@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "PROW-KULKOWA-450",
+    "category": "drawer_slide",
+    "name": "Prowadnica kulkowa pełen wysuw 450mm",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione z accessoriesCatalog.ts (runner_ball). Brak pozycji w cenniku aplikacji — cena 0.0 do uzupełnienia. NIEZWERYFIKOWANE.",
+      "length_mm": 450,
+      "available_length_mm": [250, 300, 350, 400, 450, 500, 550, 600],
+      "extension_type": "full",
+      "load_capacity_kg": 30,
+      "mounting_type": "side",
+      "manufacturer": null,
+      "ui_model": "box",
+      "ui_color": "#c0c0c0",
+      "description_pl": "Prowadnica kulkowa podpodłogowa lub boczna."
+    }
+  },
+  {
+    "sku": "PROW-ROLKOWA-400",
+    "category": "drawer_slide",
+    "name": "Prowadnica rolkowa boczna 400mm",
+    "system_id": null,
+    "price": 0.0,
+    "specs": {
+      "verified": false,
+      "source": "Przeniesione z accessoriesCatalog.ts (runner_roller). Brak pozycji w cenniku aplikacji — cena 0.0 do uzupełnienia. NIEZWERYFIKOWANE.",
+      "length_mm": 400,
+      "available_length_mm": [250, 300, 350, 400, 450, 500, 550],
+      "extension_type": "partial",
+      "load_capacity_kg": 15,
+      "mounting_type": "side",
+      "manufacturer": null,
+      "ui_model": "box",
+      "ui_color": "#a3a3a3",
+      "description_pl": "Prowadnica rolkowa 3/4 wysuwu, do mebli ekonomicznych."
+    }
+  }
+]
