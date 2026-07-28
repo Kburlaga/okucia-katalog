@@ -60,15 +60,21 @@
       "length_mm": 200,
       "groove_depth_mm": 8,
       "groove_width_mm": 18,
-      "hole_pitch_mm": null,
-      "protrusion_mm": null,
       "mounting_type": "edge_milled",
       "finish": null,
       "material": null,
       "manufacturer": null,
       "ui_model": "box",
       "ui_color": "#44403c",
-      "description_pl": "Uchwyt montowany na górnej krawędzi frontu. Wymaga frezowania."
+      "description_pl": "Uchwyt montowany na górnej krawędzi frontu. Wymaga frezowania.",
+      "not_applicable": [
+        "hole_pitch_mm",
+        "protrusion_mm",
+        "width_mm",
+        "height_mm",
+        "mounting_screw_thread"
+      ],
+      "not_applicable_reason": "Profil frezowany w krawędzi frontu (mounting_type=edge_milled): nie ma otworów przelotowych ani wysięgu przed front, a przekrój opisują groove_width_mm/groove_depth_mm."
     }
   }
 ]

@@ -42,8 +42,6 @@
       "puszka_offset_mm": 22.0,
       "screw_holes_pitch_mm": 32,
       "overlay_type": "narozny",
-      "min_overlay_mm": null,
-      "max_overlay_mm": null,
       "min_door_thickness_mm": 16,
       "max_door_thickness_mm": 22,
       "soft_close": true,
@@ -52,7 +50,12 @@
       "series": null,
       "ui_model": "box",
       "ui_color": "#a8a29e",
-      "description_pl": "Zawias do drzwi narożnych, stosowany w zabudowach narożnych."
+      "description_pl": "Zawias do drzwi narożnych, stosowany w zabudowach narożnych.",
+      "not_applicable": [
+        "min_overlay_mm",
+        "max_overlay_mm"
+      ],
+      "not_applicable_reason": "Zawias narożny (overlay_type=narozny) mocuje się na ścięciu narożnika — zakres nakładki na bok, zdefiniowany dla zawiasów nakładanych, go nie dotyczy."
     }
   }
 ]

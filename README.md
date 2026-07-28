@@ -51,15 +51,40 @@ Endpointy:
 Lokalnie: `uvicorn app:app --reload --port 8000`
 Serwer: `docker compose up --build -d` (deploy automatyczny przez `.github/workflows/deploy.yml`).
 
-## Znany rozjazd do naprawienia (Faza 3)
-W kalkulatorze logika szuflady jest w 3 miejscach i się różni:
-- `HardwareSystem` (tabela): dno `LW−75`, tył `LW−87` — POPRAWNE, tego używa ten moduł.
-- `cutting_list_v3.py`: dno liczone `LW−87` (błąd), NL zgadywane.
-- `hardware.py` (`DRAWER_SYSTEMS`): trzecia kopia offsetów.
+## Walidacja kompletności
+
+Wymagane pola techniczne per kategoria opisuje `okucia/schema.py` — to kod,
+nie proza, więc da się to sprawdzić:
+
+```
+python tools/validate_catalog.py            # raport zbiorczy
+python tools/validate_catalog.py --verbose  # z listą SKU
+python tools/validate_catalog.py --strict   # kod wyjścia 1 przy brakach (CI)
+```
+
+Sprawdzana jest obecność **i niepustość** — `{"nl_mm": null}` to brak danej,
+a nie dana. Gdy pole naprawdę nie dotyczy pozycji (zawias narożny nie ma
+zakresu nakładki, uchwyt frezowany nie ma rozstawu otworów), wpisuje się je
+w `specs.not_applicable` wraz z `not_applicable_reason` — udokumentowany
+wyjątek jest lepszy niż zmyślona liczba wpisana, żeby walidator zamilkł.
+
+Ten sam raport wystawia kalkulator pod `GET /catalog/health`.
+
+**Stan na 2026-07-28:** systemy mają komplet pól, ale 434 z 444 pozycji ma
+puste pole wymagane — to pozostałość po parserach PDF-ów GTV (m.in.
+`min_carcass_depth_mm`/`min_carcass_width_mm` puste we wszystkich 293
+kompletach szuflad, `force_min_N`/`force_max_N` we wszystkich podnośnikach).
+Nie blokuje to dzisiejszych obliczeń, bo te idą z `systems.json`, ale blokuje
+walidacje typu „czy ten komplet zmieści się w tym korpusie".
 
 ## Roadmap do jednego źródła
-1. **(ten krok)** bliźniak + Fusion liczy z tego modułu.
-2. **Faza 2:** owinąć `okucia` w FastAPI + Docker + runner + port → dostęp HTTP
-   dla programów nie-Pythonowych. Reużywa tego samego jądra.
-3. **Faza 3:** kalkulator stolarski przepięty na wspólny moduł/serwis,
-   usunięcie duplikatów i rozjazdu (ostrożnie, na gałęzi, z testami).
+1. ~~bliźniak + Fusion liczy z tego modułu~~ — zrobione.
+2. ~~**Faza 2:** owinąć `okucia` w FastAPI + Docker + runner + port~~ — zrobione
+   (`app.py`, port 8015).
+3. ~~**Faza 3:** kalkulator przepięty na wspólny moduł, usunięcie duplikatów~~ —
+   zrobione 2026-07-28. Kalkulator nie ma już własnych kopii offsetów ani
+   redukcji cięcia: `hardware.py` czyta je stąd, `HardwareSystem` w bazie jest
+   seedowany z tego katalogu, a `drilling.py` nie zawiera literałów rozstawów.
+4. **Do zrobienia:** uzupełnić puste pola wymagane (patrz walidacja wyżej)
+   i potwierdzić kartami producentów pozycje z `verified: false` oraz systemy
+   z `drilling_verified: false`.
