@@ -191,11 +191,11 @@
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "box_board_thickness_mm": 18.0
   },
-  "atm_futura_evo": {
-    "id": "atm_futura_evo",
-    "name": "ATM Futura Evo",
+  "atm_futura": {
+    "id": "atm_futura",
+    "name": "ATM Futura",
     "type": "drawer",
-    "box_board_thickness_mm": 18.0,
+    "box_board_thickness_mm": 16.0,
     "side_thickness_mm": 14.0,
     "load_capacity_kg": 40,
     "available_nl_mm": [
@@ -206,22 +206,57 @@
       500,
       550
     ],
-    "h_classes": null,
-    "cut_bottom_width_reduction": null,
-    "cut_bottom_depth_reduction": null,
-    "cut_back_width_reduction": null,
-    "offset_prowadnica": null,
-    "front_fix_offset_internal": null,
-    "base_front_y": null,
-    "fix_x_internal": null,
-    "slide_screw_x_front_mm": null,
-    "slide_screw_spacing_mm": null,
-    "shelf_pin_x_offset_mm": null,
-    "front_fix_second_hole_dy_mm": null,
-    "front_fix_second_hole_min_h_mm": null,
-    "carcass_dowel_x_offset_mm": null,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "base_front_y": 47.5,
+    "fix_x_internal": 15.5,
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "slide_screw_spacing_by_nl": {
+      "300": 128.0,
+      "350": 160.0,
+      "400": 192.0,
+      "450": 224.0
+    },
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "rail_required_above_front_mm": null,
+    "h_classes": {
+      "A": {
+        "nominal_mm": 90,
+        "real_mm": 84,
+        "min_carcass_height_mm": 112,
+        "model": "PK-1600"
+      },
+      "B": {
+        "nominal_mm": 122,
+        "real_mm": 116,
+        "min_carcass_height_mm": 144,
+        "model": "PK-1601"
+      },
+      "C": {
+        "nominal_mm": 172,
+        "real_mm": 167,
+        "min_carcass_height_mm": 194,
+        "model": "PK-1602"
+      },
+      "D": {
+        "nominal_mm": 203,
+        "real_mm": 199,
+        "min_carcass_height_mm": 230,
+        "model": "PK-1603"
+      }
+    },
+    "carcass_depth_formula": "LT = NL + 3",
     "drilling_verified": false,
-    "pricing_sku_prefix": null,
-    "source": "ATM Futura Evo: system na plyte 18 mm, bok 14 mm, nosnosc 40 kg, wysokosci H=90/122/172/203, NL 300-550 (dane ze strony producenta i sprzedawcow). WYMIARY MONTAZOWE NIEZNANE: producent nie publikuje wzorow na dno i tyl ani offsetow wiercen. Pola zostaja puste CELOWO — aplikacja odmawia liczenia systemu bez danych zamiast podstawiac cudze liczby."
+    "drilling_source": "Katalog ATM SZUFLADY FUTURA (PDF producenta): schemat wiercen s.3, rozkroj i wymiary s.4-7. Pierwszy otwor prowadnicy 37 mm od krawedzi szafki. Rozstaw drugiego otworu zalezy od NL: 128/160/192/224 dla NL 300/350/400/450 (odczyt jednoznaczny). Dla NL 500 i 550 schemat pokazuje TRZECI otwor montazowy, a odczyt wymiarow (224/256) jest niejednoznaczny - do potwierdzenia. Do tego czasu obie dlugosci licza sie zachowawczo wg slide_screw_spacing_mm.",
+    "pricing_sku_prefix": "ATM-FUTURA",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta."
   }
 }
