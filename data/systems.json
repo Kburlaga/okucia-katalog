@@ -259,5 +259,74 @@
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta.",
     "nl_depth_clearance_mm": 3.0
+  },
+  "atm_futura_evo": {
+    "id": "atm_futura_evo",
+    "name": "ATM Futura Evo",
+    "type": "drawer",
+    "box_board_thickness_mm": 18.0,
+    "side_thickness_mm": 14.0,
+    "load_capacity_kg": 40,
+    "available_nl_mm": [
+      300,
+      350,
+      400,
+      450,
+      500,
+      550
+    ],
+    "nl_depth_clearance_mm": 3.0,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "base_front_y": 47.5,
+    "fix_x_internal": 15.5,
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "slide_screw_spacing_by_nl": {
+      "300": 128.0,
+      "350": 160.0,
+      "400": 192.0,
+      "450": 224.0
+    },
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "rail_required_above_front_mm": null,
+    "h_classes": {
+      "A": {
+        "nominal_mm": 90,
+        "real_mm": 84,
+        "min_carcass_height_mm": 125,
+        "model": "PK-1800"
+      },
+      "B": {
+        "nominal_mm": 122,
+        "real_mm": 116,
+        "min_carcass_height_mm": 157,
+        "model": "PK-1801"
+      },
+      "C": {
+        "nominal_mm": 172,
+        "real_mm": 167,
+        "min_carcass_height_mm": 207,
+        "model": "PK-1802"
+      },
+      "D": {
+        "nominal_mm": 203,
+        "real_mm": 199,
+        "min_carcass_height_mm": 239,
+        "model": "PK-1803"
+      }
+    },
+    "carcass_depth_formula": "LT = NL + 3 (frontowa i wewnetrzna); LT = NL + 12 gdy frontowa i wewnetrzna razem",
+    "drilling_verified": false,
+    "drilling_source": "Instrukcja ATM FUTURA EVO (PDF producenta, 4 str.): rozstawy otworow prowadnicy s.1, wymiary montazowe i mocowanie frontu s.2. Pierwszy otwor 37 mm od krawedzi szafki. Rysunek pokazuje wprost 128 i 224 oraz trzeci otwor przy dluzszych NL, ale nie rozpisuje wartosci dla kazdej dlugosci osobno - mapa przeniesiona z katalogu FUTURA (ta sama prowadnica), NL 500 i 550 licza sie zachowawczo. Do potwierdzenia.",
+    "pricing_sku_prefix": "ATM-EVO",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "source": "Instrukcja ATM FUTURA EVO (PDF producenta). Modele PK-1800 H90, PK-1801 H122, PK-1802 H172, PK-1803 H203; NL 300-550; nosnosc 40 kg; 80 000 cykli; regulacja 3D. Naglowek 'Wymiary ciecia dla plyty 18mm' i grubosc 18 na rysunku dna i tylu - to jest wariant NA PLYTE 18, w odroznieniu od linii FUTURA (PK-16xx), ktora producent rozkraja z plyty 16. Wzory ciecia sa w OBU liniach identyczne (dno LW-75 na NL-24, tyl LW-87, wysokosci 84/116/167/199) - rozni sie grubosc plyty i minimalna wysokosc korpusu (125/157/207/239 zamiast 112/144/194/230)."
   }
 }
