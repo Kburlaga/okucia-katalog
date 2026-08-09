@@ -131,6 +131,10 @@ DRAWER_SYSTEM_OPTIONAL_WITH_IMPACT = {
     "h_classes": "bez klas wysokości szuflady liczą się wzorem zachowawczym "
                  "(drawer_dims._without_h_classes) — wysokość ścianki jest szacowana",
     "side_thickness_mm": "brak grubości płaszcza systemowego",
+    # Brak pola = 16 mm, czyli stan sprzed wariantów na płytę 18 (GTV AXIS PRO 18,
+    # ATM Futura Evo). To nie jest kosmetyka: grubość decyduje o formatce dna
+    # i tyłu, o wierceniach w nich i o tym, z którego arkusza schodzą.
+    "box_board_thickness_mm": "brak grubości płyty szuflady — liczy się 16 mm",
     "rail_required_above_front_mm": "nie da się stwierdzić, czy front wymaga relingu",
 }
 

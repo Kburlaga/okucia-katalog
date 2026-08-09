@@ -6,11 +6,20 @@ Konwencja:
   LW = światło korpusu (wewnętrzna szerokość sekcji), mm
   NL = długość nominalna prowadnicy, mm
   h_class = klasa wysokości szuflady: A / B / C / D
-Płyta szuflady = 16 mm (standard GTV dla dna/tyłu).
+Płyta szuflady bierze się z SYSTEMU (`box_board_thickness_mm`), a nie z jednej
+stałej: GTV wypuściło AXIS PRO na płytę 18 mm, ATM ma Futurę Evo na 18 mm.
+Systemy bez tego pola liczą się na 16 mm, czyli tak jak dotąd.
 """
 from . import loader
 
-BOARD_MM = 16.0  # grubość płyty dna/tyłu
+BOARD_MM = 16.0  # domyślna grubość płyty dna/tyłu (systemy sprzed wariantów 18 mm)
+
+
+def board_mm(system_id="gtv_axis_pro"):
+    """Grubość płyty dna i tyłu szuflady dla tego systemu."""
+    sid = loader.resolve_system_id(system_id) or system_id
+    val = loader.get_system(sid).get("box_board_thickness_mm")
+    return float(val) if val else BOARD_MM
 
 
 def pick_nl(depth_mm, system_id="gtv_axis_pro", clearance_mm=10.0):
@@ -36,6 +45,7 @@ def compute_drawer_parts(LW, NL, system_id="gtv_axis_pro", h_class="D",
       min_carcass_height, rail_required (bool|None)
     """
     sysd = loader.get_system(system_id)
+    plyta = float(sysd.get("box_board_thickness_mm") or BOARD_MM)
 
     bottom_w = LW - sysd["cut_bottom_width_reduction"]
     bottom_d = NL - sysd["cut_bottom_depth_reduction"]
@@ -61,8 +71,8 @@ def compute_drawer_parts(LW, NL, system_id="gtv_axis_pro", h_class="D",
         "h_class": h_class,
         "LW": LW,
         "NL": NL,
-        "dno": {"width": bottom_w, "depth": bottom_d, "thickness": BOARD_MM},
-        "tyl": {"width": back_w, "height": back_h, "thickness": BOARD_MM},
+        "dno": {"width": bottom_w, "depth": bottom_d, "thickness": plyta},
+        "tyl": {"width": back_w, "height": back_h, "thickness": plyta},
         "bok": {
             "thickness": sysd.get("side_thickness_mm"),
             "height": side_h,

@@ -130,5 +130,98 @@
     "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
     "pricing_sku_prefix": "BLUM-TANDEMBOX",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
+  },
+  "gtv_axis_pro_18": {
+    "id": "gtv_axis_pro_18",
+    "name": "GTV Axis Pro 18",
+    "type": "drawer",
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "base_front_y": 47.5,
+    "fix_x_internal": 15.5,
+    "cut_bottom_width_reduction": 75.0,
+    "cut_bottom_depth_reduction": 24.0,
+    "cut_back_width_reduction": 87.0,
+    "side_thickness_mm": 14.0,
+    "rail_required_above_front_mm": 284.0,
+    "available_nl_mm": [
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      550,
+      600
+    ],
+    "h_classes": {
+      "A": {
+        "nominal_mm": 86,
+        "real_mm": 84,
+        "min_carcass_height_mm": 115
+      },
+      "B": {
+        "nominal_mm": 120,
+        "real_mm": 116,
+        "min_carcass_height_mm": 147
+      },
+      "C": {
+        "nominal_mm": 168,
+        "real_mm": 167,
+        "min_carcass_height_mm": 198
+      },
+      "D": {
+        "nominal_mm": 200,
+        "real_mm": 199,
+        "min_carcass_height_mm": 230
+      }
+    },
+    "synchro_rod_cut_formula": "LW-127",
+    "load_capacity_kg": 40,
+    "source": "GTV AXIS PRO na plyte 18 mm (linia PB-AXISPRO18-KPL*). Wymiary formatek przeniesione z wariantu 16 mm: producent nie podaje osobnych wzorow dla grubosci plyty, a bok systemowy (14 mm), NL 250-600 i nosnosc 40 kg sa te same. Rozni sie WYLACZNIE grubosc dna i tylu.",
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_mm": 224.0,
+    "shelf_pin_x_offset_mm": 37.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "carcass_dowel_x_offset_mm": 50.0,
+    "drilling_verified": false,
+    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "pricing_sku_prefix": "GTV-PRO18",
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "box_board_thickness_mm": 18.0
+  },
+  "atm_futura_evo": {
+    "id": "atm_futura_evo",
+    "name": "ATM Futura Evo",
+    "type": "drawer",
+    "box_board_thickness_mm": 18.0,
+    "side_thickness_mm": 14.0,
+    "load_capacity_kg": 40,
+    "available_nl_mm": [
+      300,
+      350,
+      400,
+      450,
+      500,
+      550
+    ],
+    "h_classes": null,
+    "cut_bottom_width_reduction": null,
+    "cut_bottom_depth_reduction": null,
+    "cut_back_width_reduction": null,
+    "offset_prowadnica": null,
+    "front_fix_offset_internal": null,
+    "base_front_y": null,
+    "fix_x_internal": null,
+    "slide_screw_x_front_mm": null,
+    "slide_screw_spacing_mm": null,
+    "shelf_pin_x_offset_mm": null,
+    "front_fix_second_hole_dy_mm": null,
+    "front_fix_second_hole_min_h_mm": null,
+    "carcass_dowel_x_offset_mm": null,
+    "drilling_verified": false,
+    "pricing_sku_prefix": null,
+    "source": "ATM Futura Evo: system na plyte 18 mm, bok 14 mm, nosnosc 40 kg, wysokosci H=90/122/172/203, NL 300-550 (dane ze strony producenta i sprzedawcow). WYMIARY MONTAZOWE NIEZNANE: producent nie publikuje wzorow na dno i tyl ani offsetow wiercen. Pola zostaja puste CELOWO — aplikacja odmawia liczenia systemu bez danych zamiast podstawiac cudze liczby."
   }
 }
