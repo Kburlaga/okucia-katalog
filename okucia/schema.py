@@ -88,11 +88,14 @@ REQUIRED_FIELDS = {
     # `count_per_furniture` liczy SZTUKI (2: lewa + prawa), a `pieces_per_set`
     # mówi, po ile sztuk sprzedaje je producent. Liczba opakowań to iloraz —
     # trzymanie tego w jednej liczbie myliło zamówienie z montażem.
+    # Zakres regulacji NIE jest polem wymaganym: nic z niego nie liczymy, idzie
+    # tylko do podpowiedzi w instrukcji. Karta R1 go nie podaje, a karta R0 mowi
+    # "z regulacja" bez liczby - wymaganie go zablokowaloby obie pozycje przez
+    # dana, ktora nie wplywa na zaden wymiar.
     "hanging_bracket": (
         "load_capacity_kg", "pieces_per_set", "count_per_furniture", "unit",
         "mount_offset_top_mm", "mount_offset_back_mm",
         "screw_hole_pitch_mm", "screw_hole_count", "screw_diameter_mm",
-        "adjustment_vertical_mm", "adjustment_horizontal_mm",
         "requires_back_cutout",
         # Wyciecie w plecach i polozenie szyny. Bez nich zawieszka jest
         # policzona i narysowana na boku, ale nie da sie powiedziec, gdzie
@@ -104,6 +107,11 @@ REQUIRED_FIELDS = {
         # Same offsety bez obrysu pozwalaly wpisac wartosc, przy ktorej wkret
         # wypada obok zawieszki i nikt tego nie widzi.
         "body_width_mm", "body_height_mm",
+        # Pozycje wkretow wzgledem GORNEGO TYLNEGO naroznika boku, jako lista
+        # par [od tylu, od gory]. Wczesniej byl tylko `mount_offset_*` plus
+        # rozstaw, co zakladalo, ze wkrety stoja jeden POD drugim - a karty GTV
+        # R0/R1 pokazuja dwa wkrety OBOK siebie, rozstawione w glab boku.
+        "screw_holes",
     ),
     # Szyna montazowa, na ktorej wiszą zawieszki. Wyceniana na metry biezace,
     # bo tnie sie ja na szerokosc mebla (albo ciagiem pod kilka szafek).

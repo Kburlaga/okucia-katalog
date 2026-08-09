@@ -30,7 +30,17 @@
       "rail_top_from_carcase_top_mm": 18,
       "rail_sku": "SZYNA-MONT",
       "body_width_mm": 26,
-      "body_height_mm": 95
+      "body_height_mm": 95,
+      "screw_holes": [
+        [
+          13,
+          28
+        ],
+        [
+          13,
+          60
+        ]
+      ]
     }
   },
   {
@@ -64,7 +74,21 @@
       "rail_top_from_carcase_top_mm": 18,
       "rail_sku": "SZYNA-MONT",
       "body_width_mm": 28,
-      "body_height_mm": 112
+      "body_height_mm": 112,
+      "screw_holes": [
+        [
+          14,
+          30
+        ],
+        [
+          14,
+          62
+        ],
+        [
+          14,
+          94
+        ]
+      ]
     }
   },
   {
@@ -76,7 +100,7 @@
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Karta produktowa GTV ZK-FORCE-KPL. Z karty: komplet 2 szt. (opakowanie 100 szt.), material ZnAl + stal, kolor srebrny, korpus 58 x 34 x 120,5 mm, zakres regulacji wysokosci 143-161 mm (18 mm), zakres 16-34 mm, zaslepka fi25 (grubosc 4) w otworze fi28, blaszka scienna 54 x 34 x 1,8 mm z otworami w rozstawie 34 i 17 mm oraz otworem podluznym 11,8 x 4,8 mm do regulacji. KARTA PRODUKTOWA NIE JEST INSTRUKCJA MONTAZU: nie ma w niej pozycji gniazda wzgledem krawedzi boku, glebokosci frezu, srednic otworow w plycie ani nosnosci. Te pola zostaja puste CELOWO - aplikacja odmawia liczenia zawieszki bez danych montazowych zamiast podstawiac wymiary innego modelu.",
+      "source": "Karta produktowa GTV ZK-FORCE-KPL. Z karty: nosnosc 100 kg na komplet (50 kg/szt.), komplet 2 szt. (opakowanie 100 szt.), material ZnAl + stal, kolor srebrny, korpus 58 x 34 x 120,5 mm, zakres regulacji wysokosci 143-161 mm (18 mm), zakres 16-34 mm, zaslepka fi25 (grubosc 4) w otworze fi28, blaszka scienna 54 x 34 x 1,8 mm z otworami w rozstawie 34 i 17 mm oraz otworem podluznym 11,8 x 4,8 mm do regulacji. KARTA PRODUKTOWA NIE JEST INSTRUKCJA MONTAZU: nie ma w niej pozycji gniazda wzgledem krawedzi boku, glebokosci frezu, srednic otworow w plycie ani nosnosci. Te pola zostaja puste CELOWO - aplikacja odmawia liczenia zawieszki bez danych montazowych zamiast podstawiac wymiary innego modelu.",
       "mocowanie_do_sciany": "blaszka",
       "wall_plate_width_mm": 54,
       "wall_plate_height_mm": 34,
@@ -88,7 +112,7 @@
       "body_height_mm": 120.5,
       "cover_cap_diameter_mm": 25,
       "cover_hole_diameter_mm": 28,
-      "load_capacity_kg": null,
+      "load_capacity_kg": 50,
       "pieces_per_set": 2,
       "count_per_furniture": 2,
       "unit": "kpl",
@@ -105,7 +129,100 @@
       "material": "ZnAl + stal",
       "finish": "srebrny",
       "manufacturer": "GTV",
-      "description_pl": "Zawieszka wpuszczana w bok szafki - niewidoczna od srodka, zakryta zaslepka fi25. Wiesza sie na BLASZCE przykrecanej do sciany, nie na szynie ciaglej. Regulacja 18 mm w pionie plus otwor podluzny w blaszce."
+      "description_pl": "Zawieszka wpuszczana w bok szafki - niewidoczna od srodka, zakryta zaslepka fi25. Wiesza sie na BLASZCE przykrecanej do sciany, nie na szynie ciaglej. Regulacja 18 mm w pionie plus otwor podluzny w blaszce.",
+      "screw_holes": null
+    }
+  },
+  {
+    "sku": "ZK-ZAW-R0-10",
+    "category": "hanging_bracket",
+    "name": "GTV R0 z regulacja - zawieszka kuchenna (komplet L+P)",
+    "system_id": null,
+    "price": 7.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Karta produktowa GTV ZK-ZAW-R0-10 / R0-30. Z karty: nosnosc 95 kg na komplet (2 szt.), korpus 57,2 x 37,5 x 17,4 mm, otwory na wkret fi4,1 w rozstawie 32 mm (jeden obok drugiego, wzdluz glebokosci boku), hak 9 mm. ODCZYT NIEPEWNY: karta wymiaruje otwory lancuchem 32 + 19 od krawedzi korpusu i nie mowi, ktora krawedz przylega do plecow, wiec przypisanie 19/51 od tylu wymaga potwierdzenia instrukcja montazu. `rail_top_from_carcase_top_mm` wyprowadzone z wysokosci haka (9 mm), nie podane wprost.",
+      "load_capacity_kg": 47.5,
+      "pieces_per_set": 2,
+      "count_per_furniture": 2,
+      "unit": "kpl",
+      "body_width_mm": 57.2,
+      "body_height_mm": 37.5,
+      "body_thickness_mm": 17.4,
+      "screw_holes": [
+        [
+          19.0,
+          28.0
+        ],
+        [
+          51.0,
+          28.0
+        ]
+      ],
+      "mount_offset_back_mm": 19.0,
+      "mount_offset_top_mm": 28.0,
+      "screw_hole_pitch_mm": 32.0,
+      "screw_hole_count": 2,
+      "screw_diameter_mm": 4.1,
+      "adjustment_vertical_mm": null,
+      "adjustment_horizontal_mm": null,
+      "requires_back_cutout": true,
+      "back_cutout_width_mm": 57.2,
+      "back_cutout_height_mm": 37.5,
+      "rail_top_from_carcase_top_mm": 9.0,
+      "rail_sku": "SZYNA-MONT",
+      "mocowanie_do_sciany": "szyna",
+      "material": "stal + tworzywo",
+      "finish": null,
+      "manufacturer": "GTV",
+      "description_pl": "Zawieszka przykrecana do wewnetrznej strony boku w gornym tylnym narozniku; hak z tylu zaczepia sie o szyne albo blaszke na scianie."
+    }
+  },
+  {
+    "sku": "ZK-R1-KPL-10",
+    "category": "hanging_bracket",
+    "name": "GTV R1 - zawieszka kuchenna (komplet L+P)",
+    "system_id": null,
+    "price": 9.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Karta produktowa GTV ZK-R1-KPL-10. Z karty: nosnosc 110 kg na komplet (2 szt.), korpus 60 x 44 x 18 mm, otwory w rozstawie 32 mm, pierwszy 13,5 mm od krawedzi, zaczep 30 mm. ODCZYT NIEPEWNY tak samo jak przy R0: karta nie mowi, ktora krawedz korpusu przylega do plecow, a srednicy otworu nie podaje (przyjeto fi4,1 jak w R0). `rail_top_from_carcase_top_mm` wyprowadzone z wysokosci zaczepu (30 mm).",
+      "load_capacity_kg": 55.0,
+      "pieces_per_set": 2,
+      "count_per_furniture": 2,
+      "unit": "kpl",
+      "body_width_mm": 60.0,
+      "body_height_mm": 44.0,
+      "body_thickness_mm": 18.0,
+      "screw_holes": [
+        [
+          13.5,
+          39.0
+        ],
+        [
+          45.5,
+          39.0
+        ]
+      ],
+      "mount_offset_back_mm": 13.5,
+      "mount_offset_top_mm": 39.0,
+      "screw_hole_pitch_mm": 32.0,
+      "screw_hole_count": 2,
+      "screw_diameter_mm": 4.1,
+      "adjustment_vertical_mm": null,
+      "adjustment_horizontal_mm": null,
+      "requires_back_cutout": true,
+      "back_cutout_width_mm": 60.0,
+      "back_cutout_height_mm": 44.0,
+      "rail_top_from_carcase_top_mm": 30.0,
+      "rail_sku": "SZYNA-MONT",
+      "mocowanie_do_sciany": "szyna",
+      "material": "stal + tworzywo",
+      "finish": null,
+      "manufacturer": "GTV",
+      "description_pl": "Zawieszka przykrecana do wewnetrznej strony boku w gornym tylnym narozniku; hak z tylu zaczepia sie o szyne albo blaszke na scianie."
     }
   }
 ]
