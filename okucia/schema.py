@@ -95,6 +95,18 @@ REQUIRED_FIELDS = {
         "adjustment_vertical_mm", "adjustment_horizontal_mm",
         "requires_back_cutout",
     ),
+    # Złączka korpusu: konfirmat, mimośród albo wkręt samowiercący. Wybór
+    # zmienia i wiercenia, i listę zakupów, więc wymiary muszą być danymi
+    # katalogu, a nie stałymi w kodzie rysunków.
+    #
+    # Pola nieistotne dla danego typu (konfirmat nie ma bębenka) wpisuje się
+    # w `specs.not_applicable` — inaczej trzeba by wymyślać dla nich liczby.
+    "carcass_fastener": (
+        "fastener_type", "unit", "length_mm",
+        "face_hole_diameter_mm", "edge_hole_diameter_mm", "edge_hole_depth_mm",
+        "cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm",
+        "uses_dowels", "dowel_sku",
+    ),
     "furniture_accessory": ("accessory_type",),
 }
 

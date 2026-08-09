@@ -1,0 +1,81 @@
+[
+  {
+    "sku": "KONFIRMAT-5X50",
+    "category": "carcass_fastener",
+    "name": "Konfirmat 5x50 (zlacze korpusu)",
+    "system_id": null,
+    "price": 0.25,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Stan zastany aplikacji: dotychczasowe wiercenia korpusu (drilling.ROLA_KONFIRMAT) opisane jako pozycja katalogowa. Wymiary standardowe, NIEZWERYFIKOWANE karta producenta.",
+      "not_applicable": ["cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm"],
+      "not_applicable_reason": "Konfirmat wkreca sie wprost przez plaszczyzne w czolo drugiej plyty — nie ma bebenka.",
+      "fastener_type": "confirmat",
+      "unit": "szt",
+      "length_mm": 50,
+      "face_hole_diameter_mm": 7,
+      "edge_hole_diameter_mm": 5,
+      "edge_hole_depth_mm": 40,
+      "cam_diameter_mm": null,
+      "cam_depth_mm": null,
+      "cam_axis_from_edge_mm": null,
+      "uses_dowels": true,
+      "dowel_sku": "KOLEK-8X30",
+      "rozbieralne": false,
+      "description_pl": "Domyslne zlacze aplikacji. Skrecane na stale, widoczny leb od strony plaszczyzny."
+    }
+  },
+  {
+    "sku": "MIMOSROD-15",
+    "category": "carcass_fastener",
+    "name": "Mimosrod 15 mm + trzpien (zlacze rozbieralne)",
+    "system_id": null,
+    "price": 1.1,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy zlacza mimosrodowego (bebenek fi15, trzpien 34 mm). Wartosci NIEZWERYFIKOWANE karta producenta — sprawdz przed wierceniem.",
+      "fastener_type": "cam_lock",
+      "unit": "kpl",
+      "length_mm": 34,
+      "face_hole_diameter_mm": 15,
+      "edge_hole_diameter_mm": 8,
+      "edge_hole_depth_mm": 12,
+      "cam_diameter_mm": 15,
+      "cam_depth_mm": 12.5,
+      "cam_axis_from_edge_mm": 34,
+      "uses_dowels": true,
+      "dowel_sku": "KOLEK-8X30",
+      "rozbieralne": true,
+      "description_pl": "Bebenek fi15 frezowany w plaszczyznie jednej plyty, trzpien wkrecany w czolo drugiej. Mebel da sie rozkrecic bez niszczenia plyty."
+    }
+  },
+  {
+    "sku": "WKRET-SAMOWIERCACY-5X50",
+    "category": "carcass_fastener",
+    "name": "Wkret samowiercacy do plyty 5x50",
+    "system_id": null,
+    "price": 0.18,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy wkreta do plyty meblowej z wiertlem na koncu. NIEZWERYFIKOWANE karta producenta.",
+      "not_applicable": ["cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm", "dowel_sku"],
+      "not_applicable_reason": "Wkret samowiercacy nie ma bebenka, a laczenia nie ustala sie kolkami — wkret wchodzi wprost w czolo.",
+      "fastener_type": "self_drilling_screw",
+      "unit": "szt",
+      "length_mm": 50,
+      "face_hole_diameter_mm": 0,
+      "edge_hole_diameter_mm": 0,
+      "edge_hole_depth_mm": 0,
+      "cam_diameter_mm": null,
+      "cam_depth_mm": null,
+      "cam_axis_from_edge_mm": null,
+      "uses_dowels": false,
+      "dowel_sku": null,
+      "rozbieralne": false,
+      "description_pl": "Wkrecany bez nawiercania — zerowe srednice otworow sa dana, nie brakiem. Punkty i tak trzeba wytrasowac, zeby wkret trafil w srodek czola."
+    }
+  }
+]
