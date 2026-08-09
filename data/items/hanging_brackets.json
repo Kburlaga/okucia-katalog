@@ -1,0 +1,58 @@
+[
+  {
+    "sku": "ZAWIESZKA-REG-30",
+    "category": "hanging_bracket",
+    "name": "Zawieszka meblowa regulowana 30 kg (komplet L+P)",
+    "system_id": null,
+    "price": 9.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy zawieszki regulowanej do szafek wiszacych. Wartosci NIEZWERYFIKOWANE karta producenta — przed wierceniem sprawdz karte konkretnego modelu.",
+      "load_capacity_kg": 30,
+      "pieces_per_set": 2,
+      "count_per_furniture": 2,
+      "unit": "kpl",
+      "mount_offset_top_mm": 40,
+      "mount_offset_back_mm": 25,
+      "screw_hole_pitch_mm": 32,
+      "screw_hole_count": 2,
+      "screw_diameter_mm": 4,
+      "adjustment_vertical_mm": 20,
+      "adjustment_horizontal_mm": 10,
+      "requires_back_cutout": true,
+      "material": "stal",
+      "finish": "ocynk",
+      "manufacturer": null,
+      "description_pl": "Zawieszka montowana wewnatrz korpusu w gornym tylnym narozniku boku. Regulacja w dwoch osiach po zawieszeniu mebla na listwie lub wkretach w scianie."
+    }
+  },
+  {
+    "sku": "ZAWIESZKA-REG-60",
+    "category": "hanging_bracket",
+    "name": "Zawieszka meblowa wzmocniona 60 kg (komplet L+P)",
+    "system_id": null,
+    "price": 16.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy zawieszki wzmocnionej do szafek obciazonych (sprzet RTV, ksiazki). Wartosci NIEZWERYFIKOWANE karta producenta.",
+      "load_capacity_kg": 60,
+      "pieces_per_set": 2,
+      "count_per_furniture": 2,
+      "unit": "kpl",
+      "mount_offset_top_mm": 45,
+      "mount_offset_back_mm": 28,
+      "screw_hole_pitch_mm": 32,
+      "screw_hole_count": 3,
+      "screw_diameter_mm": 4,
+      "adjustment_vertical_mm": 22,
+      "adjustment_horizontal_mm": 12,
+      "requires_back_cutout": true,
+      "material": "stal",
+      "finish": "ocynk",
+      "manufacturer": null,
+      "description_pl": "Wersja wzmocniona, wyzsza nosnosc i trzeci otwor mocowania. Do szafek pod sprzet."
+    }
+  }
+]

@@ -81,6 +81,20 @@ REQUIRED_FIELDS = {
         "cut_clearance_mm", "supports_per_rod", "support_sku", "unit",
     ),
     "wardrobe_rod_support": ("fits_profile", "pieces_per_set", "unit"),
+    # Zawieszka mebla wiszącego. Montuje się ją WEWNĄTRZ korpusu, w górnym
+    # tylnym narożniku boku, więc jej offsety są danymi wiertarskimi tak samo
+    # jak puszka zawiasu — bez nich kalkulator umiałby ją tylko wycenić.
+    #
+    # `count_per_furniture` liczy SZTUKI (2: lewa + prawa), a `pieces_per_set`
+    # mówi, po ile sztuk sprzedaje je producent. Liczba opakowań to iloraz —
+    # trzymanie tego w jednej liczbie myliło zamówienie z montażem.
+    "hanging_bracket": (
+        "load_capacity_kg", "pieces_per_set", "count_per_furniture", "unit",
+        "mount_offset_top_mm", "mount_offset_back_mm",
+        "screw_hole_pitch_mm", "screw_hole_count", "screw_diameter_mm",
+        "adjustment_vertical_mm", "adjustment_horizontal_mm",
+        "requires_back_cutout",
+    ),
     "furniture_accessory": ("accessory_type",),
 }
 
