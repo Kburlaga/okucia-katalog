@@ -66,5 +66,46 @@
       "body_width_mm": 28,
       "body_height_mm": 112
     }
+  },
+  {
+    "sku": "ZK-FORCE-KPL",
+    "category": "hanging_bracket",
+    "name": "GTV FORCE - zawieszka niewidoczna (komplet L+P)",
+    "system_id": null,
+    "price": 18.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Karta produktowa GTV ZK-FORCE-KPL. Z karty: komplet 2 szt. (opakowanie 100 szt.), material ZnAl + stal, kolor srebrny, korpus 58 x 34 x 120,5 mm, zakres regulacji wysokosci 143-161 mm (18 mm), zakres 16-34 mm, zaslepka fi25 (grubosc 4) w otworze fi28, blaszka scienna 54 x 34 x 1,8 mm z otworami w rozstawie 34 i 17 mm oraz otworem podluznym 11,8 x 4,8 mm do regulacji. KARTA PRODUKTOWA NIE JEST INSTRUKCJA MONTAZU: nie ma w niej pozycji gniazda wzgledem krawedzi boku, glebokosci frezu, srednic otworow w plycie ani nosnosci. Te pola zostaja puste CELOWO - aplikacja odmawia liczenia zawieszki bez danych montazowych zamiast podstawiac wymiary innego modelu.",
+      "mocowanie_do_sciany": "blaszka",
+      "wall_plate_width_mm": 54,
+      "wall_plate_height_mm": 34,
+      "wall_plate_thickness_mm": 1.8,
+      "wall_plate_hole_pitch_mm": 34,
+      "adjustment_vertical_mm": 18,
+      "adjustment_horizontal_mm": null,
+      "body_width_mm": 34,
+      "body_height_mm": 120.5,
+      "cover_cap_diameter_mm": 25,
+      "cover_hole_diameter_mm": 28,
+      "load_capacity_kg": null,
+      "pieces_per_set": 2,
+      "count_per_furniture": 2,
+      "unit": "kpl",
+      "mount_offset_top_mm": null,
+      "mount_offset_back_mm": null,
+      "screw_hole_pitch_mm": null,
+      "screw_hole_count": null,
+      "screw_diameter_mm": null,
+      "requires_back_cutout": null,
+      "back_cutout_width_mm": null,
+      "back_cutout_height_mm": null,
+      "rail_top_from_carcase_top_mm": null,
+      "rail_sku": null,
+      "material": "ZnAl + stal",
+      "finish": "srebrny",
+      "manufacturer": "GTV",
+      "description_pl": "Zawieszka wpuszczana w bok szafki - niewidoczna od srodka, zakryta zaslepka fi25. Wiesza sie na BLASZCE przykrecanej do sciany, nie na szynie ciaglej. Regulacja 18 mm w pionie plus otwor podluzny w blaszce."
+    }
   }
 ]
