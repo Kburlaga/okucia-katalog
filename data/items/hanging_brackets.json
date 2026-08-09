@@ -8,7 +8,7 @@
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Standard rynkowy zawieszki regulowanej do szafek wiszacych. Wartosci NIEZWERYFIKOWANE karta producenta — przed wierceniem sprawdz karte konkretnego modelu.",
+      "source": "Standard rynkowy zawieszki regulowanej do szafek wiszacych. Wartosci NIEZWERYFIKOWANE karta producenta — przed wierceniem sprawdz karte konkretnego modelu. Wyciecie w plecach (45x70) i polozenie szyny (18 mm ponizej gornej krawedzi korpusu) to wartosci typowe, NIEZWERYFIKOWANE karta producenta - to one decyduja, na jakiej wysokosci trasuje sie linie na scianie.",
       "load_capacity_kg": 30,
       "pieces_per_set": 2,
       "count_per_furniture": 2,
@@ -24,7 +24,11 @@
       "material": "stal",
       "finish": "ocynk",
       "manufacturer": null,
-      "description_pl": "Zawieszka montowana wewnatrz korpusu w gornym tylnym narozniku boku. Regulacja w dwoch osiach po zawieszeniu mebla na listwie lub wkretach w scianie."
+      "description_pl": "Zawieszka montowana wewnatrz korpusu w gornym tylnym narozniku boku. Regulacja w dwoch osiach po zawieszeniu mebla na listwie lub wkretach w scianie.",
+      "back_cutout_width_mm": 45,
+      "back_cutout_height_mm": 70,
+      "rail_top_from_carcase_top_mm": 18,
+      "rail_sku": "SZYNA-MONT"
     }
   },
   {
@@ -36,7 +40,7 @@
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Standard rynkowy zawieszki wzmocnionej do szafek obciazonych (sprzet RTV, ksiazki). Wartosci NIEZWERYFIKOWANE karta producenta.",
+      "source": "Standard rynkowy zawieszki wzmocnionej do szafek obciazonych (sprzet RTV, ksiazki). Wartosci NIEZWERYFIKOWANE karta producenta. Wyciecie w plecach (45x70) i polozenie szyny (18 mm ponizej gornej krawedzi korpusu) to wartosci typowe, NIEZWERYFIKOWANE karta producenta - to one decyduja, na jakiej wysokosci trasuje sie linie na scianie.",
       "load_capacity_kg": 60,
       "pieces_per_set": 2,
       "count_per_furniture": 2,
@@ -52,7 +56,11 @@
       "material": "stal",
       "finish": "ocynk",
       "manufacturer": null,
-      "description_pl": "Wersja wzmocniona, wyzsza nosnosc i trzeci otwor mocowania. Do szafek pod sprzet."
+      "description_pl": "Wersja wzmocniona, wyzsza nosnosc i trzeci otwor mocowania. Do szafek pod sprzet.",
+      "back_cutout_width_mm": 45,
+      "back_cutout_height_mm": 70,
+      "rail_top_from_carcase_top_mm": 18,
+      "rail_sku": "SZYNA-MONT"
     }
   }
 ]

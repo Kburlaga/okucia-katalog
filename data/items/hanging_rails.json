@@ -1,0 +1,25 @@
+[
+  {
+    "sku": "SZYNA-MONT",
+    "category": "hanging_rail",
+    "name": "Szyna montazowa do zawieszek (mb)",
+    "system_id": null,
+    "price": 14.0,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy szyny montazowej do zawieszek meblowych. Wartosci NIEZWERYFIKOWANE karta producenta.",
+      "profile_height_mm": 27,
+      "profile_thickness_mm": 2,
+      "unit": "mb",
+      "screw_spacing_mm": 300,
+      "screw_diameter_mm": 6,
+      "wall_hole_diameter_mm": 8,
+      "cut_clearance_mm": 10,
+      "material": "stal",
+      "finish": "ocynk",
+      "manufacturer": null,
+      "description_pl": "Profil przykrecany do sciany poziomo; zawieszki zaczepiaja sie o jego gorna krawedz. Tnie sie go na szerokosc mebla minus luz montazowy."
+    }
+  }
+]

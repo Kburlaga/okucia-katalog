@@ -94,6 +94,18 @@ REQUIRED_FIELDS = {
         "screw_hole_pitch_mm", "screw_hole_count", "screw_diameter_mm",
         "adjustment_vertical_mm", "adjustment_horizontal_mm",
         "requires_back_cutout",
+        # Wyciecie w plecach i polozenie szyny. Bez nich zawieszka jest
+        # policzona i narysowana na boku, ale nie da sie powiedziec, gdzie
+        # przykrecic szyne do sciany ani czego wyciac w HDF.
+        "back_cutout_width_mm", "back_cutout_height_mm",
+        "rail_top_from_carcase_top_mm", "rail_sku",
+    ),
+    # Szyna montazowa, na ktorej wiszą zawieszki. Wyceniana na metry biezace,
+    # bo tnie sie ja na szerokosc mebla (albo ciagiem pod kilka szafek).
+    "hanging_rail": (
+        "profile_height_mm", "profile_thickness_mm", "unit",
+        "screw_spacing_mm", "screw_diameter_mm", "wall_hole_diameter_mm",
+        "cut_clearance_mm",
     ),
     # Złączka korpusu: konfirmat, mimośród albo wkręt samowiercący. Wybór
     # zmienia i wiercenia, i listę zakupów, więc wymiary muszą być danymi
