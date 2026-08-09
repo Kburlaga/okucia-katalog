@@ -99,6 +99,11 @@ REQUIRED_FIELDS = {
         # przykrecic szyne do sciany ani czego wyciac w HDF.
         "back_cutout_width_mm", "back_cutout_height_mm",
         "rail_top_from_carcase_top_mm", "rail_sku",
+        # Obrys korpusu zawieszki. Zawieszka jest DOSUNIETA do tylnej krawedzi
+        # boku i do gory - offsety wkretow musza wypasc w obrebie tego obrysu.
+        # Same offsety bez obrysu pozwalaly wpisac wartosc, przy ktorej wkret
+        # wypada obok zawieszki i nikt tego nie widzi.
+        "body_width_mm", "body_height_mm",
     ),
     # Szyna montazowa, na ktorej wiszą zawieszki. Wyceniana na metry biezace,
     # bo tnie sie ja na szerokosc mebla (albo ciagiem pod kilka szafek).
