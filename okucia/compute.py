@@ -22,11 +22,22 @@ def board_mm(system_id="gtv_axis_pro"):
     return float(val) if val else BOARD_MM
 
 
-def pick_nl(depth_mm, system_id="gtv_axis_pro", clearance_mm=10.0):
+def pick_nl(depth_mm, system_id="gtv_axis_pro", clearance_mm=None):
     """Największe NL z katalogu, które zmieści się w korpusie o danej głębokości.
-    Reguła GTV: szerokość/głębokość szuflady nie może przekraczać NL; zostawiamy
-    margines `clearance_mm` na czoło/tylne mocowanie."""
-    nls = sorted(loader.get_system(system_id).get("available_nl_mm", []))
+
+    Margines na czoło i tylne mocowanie bierze się z SYSTEMU
+    (`nl_depth_clearance_mm`), bo producenci podają go wprost: ATM pisze
+    „LT = NL + 3", czyli 3 mm. Zaszyte tu wcześniej 10 mm odrzucało u ATM
+    prowadnicę, która wg karty mieści się bez problemu — szuflada wychodziła
+    o rozmiar krótsza, niż pozwala korpus.
+
+    Jawny `clearance_mm` wygrywa (wywołania punktowe), brak pola w katalogu
+    daje 10 mm, czyli zachowanie sprzed tej zmiany.
+    """
+    sysd = loader.get_system(system_id)
+    if clearance_mm is None:
+        clearance_mm = float(sysd.get("nl_depth_clearance_mm") or 10.0)
+    nls = sorted(sysd.get("available_nl_mm", []))
     if not nls:
         raise ValueError(f"Brak available_nl_mm dla systemu {system_id!r}")
     fit = [n for n in nls if n <= depth_mm - clearance_mm]

@@ -257,6 +257,7 @@
     "drilling_source": "Katalog ATM SZUFLADY FUTURA (PDF producenta): schemat wiercen s.3, rozkroj i wymiary s.4-7. Pierwszy otwor prowadnicy 37 mm od krawedzi szafki. Rozstaw drugiego otworu zalezy od NL: 128/160/192/224 dla NL 300/350/400/450 (odczyt jednoznaczny). Dla NL 500 i 550 schemat pokazuje TRZECI otwor montazowy, a odczyt wymiarow (224/256) jest niejednoznaczny - do potwierdzenia. Do tego czasu obie dlugosci licza sie zachowawczo wg slide_screw_spacing_mm.",
     "pricing_sku_prefix": "ATM-FUTURA",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
-    "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta."
+    "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta.",
+    "nl_depth_clearance_mm": 3.0
   }
 }
