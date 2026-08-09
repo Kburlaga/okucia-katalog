@@ -178,7 +178,7 @@
     },
     "synchro_rod_cut_formula": "LW-127",
     "load_capacity_kg": 40,
-    "source": "GTV AXIS PRO na plyte 18 mm (linia PB-AXISPRO18-KPL*). Wymiary formatek przeniesione z wariantu 16 mm: producent nie podaje osobnych wzorow dla grubosci plyty, a bok systemowy (14 mm), NL 250-600 i nosnosc 40 kg sa te same. Rozni sie WYLACZNIE grubosc dna i tylu.",
+    "source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta). Linia PB-AXISPRO18-KPL*, klasy A/B/C/D = H 86/120/168/200, NL 250-600, nosnosc 40 kg, regulacja +/-2 mm, cichy domyk. Rozkroj dna i tylu POTWIERDZONY dla plyty 18 mm: dno LW-75 na NL-24, tyl LW-87 o wysokosci 84/116/167/199, obie formatki grubosci 18. Te same wzory co w wariancie 16 mm - grubosc plyty nie zmienia wymiaru formatki. Poza tabela jest jeszcze ultraniska szuflada H=69 (PB-AXISPRO18-KPL69-*, tylko NL 450-500, min. korpus 100, tyl 69), nieujeta w klasach A-D, bo model nie umie ograniczyc klasy do czesci dlugosci NL.",
     "slide_screw_x_front_mm": 37.0,
     "slide_screw_spacing_mm": 224.0,
     "shelf_pin_x_offset_mm": 37.0,
@@ -186,10 +186,21 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "drilling_source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta, 12 str.): wymiary montazowe s.5, elementy z plyty 18 mm s.7 i 12. POTWIERDZONE karta: pierwszy otwor prowadnicy 37 mm od krawedzi szafki, mocowanie frontu 15,5 i min. 47,5, minimalne wysokosci korpusu 115/147/198/230, reling zalecany powyzej 284 mm frontu, NL + 10 na glebokosc korpusu. ROZSTAW DRUGIEGO OTWORU ZALEZY OD NL (96/128/192/224 - rysunek s.5), a nie jest staly. Przypisanie 250->96, 300/350->128, 400/450->192, 500/550/600->224 to odczyt z rysunku; wiersze 300 i 450 dziela linie wymiarowa z sasiednim i wymagaja potwierdzenia. Trzeci otwor przy najdluzszych NL (+128 wg lancucha wymiarowego) nie jest jeszcze modelowany.",
     "pricing_sku_prefix": "GTV-PRO18",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
-    "box_board_thickness_mm": 18.0
+    "box_board_thickness_mm": 18.0,
+    "slide_screw_spacing_by_nl": {
+      "250": 96.0,
+      "300": 128.0,
+      "350": 128.0,
+      "400": 192.0,
+      "450": 192.0,
+      "500": 224.0,
+      "550": 224.0,
+      "600": 224.0
+    },
+    "nl_depth_clearance_mm": 10.0
   },
   "atm_futura": {
     "id": "atm_futura",
