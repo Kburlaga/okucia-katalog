@@ -132,6 +132,16 @@ REQUIRED_FIELDS = {
         "cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm",
         "uses_dowels", "dowel_sku",
     ),
+    # Kratka wentylacyjna wpuszczana w formatke (cokol, wieniec, plecy).
+    # Kluczowe sa DWA wymiary, nie jeden: obrys widoczny i wyciecie w plycie.
+    # Wyciecie na obrys to kratka wpadajaca do srodka, obrys na wyciecie to
+    # szczelina po obwodzie - roznica u W80800 to 25 mm na dlugosci.
+    "vent_grille": (
+        "overall_length_mm", "overall_width_mm",
+        "cutout_length_mm", "cutout_width_mm",
+        "recess_depth_mm", "frame_thickness_mm",
+        "free_area_cm2", "mounting_type", "unit",
+    ),
     "furniture_accessory": ("accessory_type",),
 }
 
