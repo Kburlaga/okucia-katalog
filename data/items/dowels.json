@@ -1,0 +1,18 @@
+[
+  {
+    "sku": "KOLEK-8X30",
+    "category": "dowel",
+    "name": "Kołek 8x30mm",
+    "system_id": null,
+    "price": 0.15,
+    "specs": {
+      "verified": false,
+      "source": "Standardowy kołek meblowy drewniany (buk). Wartości zgodne z pricing.DEFAULT_PRICING kalkulatora (pozycja KOLEK-8X30). NIEZWERYFIKOWANE kartą producenta.",
+      "diameter_mm": 8,
+      "length_mm": 30,
+      "unit": "szt",
+      "material": "drewno bukowe",
+      "description_pl": "Kołek ustalający złącza korpusu. Połowa długości wchodzi w czoło jednej płyty, połowa w płaszczyznę drugiej; ustala płyty względem siebie, zanim złącze je ściągnie."
+    }
+  }
+]

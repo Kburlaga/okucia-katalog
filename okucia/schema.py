@@ -132,6 +132,13 @@ REQUIRED_FIELDS = {
         "cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm",
         "uses_dowels", "dowel_sku",
     ),
+    # Kołek ustalający złącza (drewniany trzpień). Dobiera go złączka przez
+    # `dowel_sku` — połowa długości wchodzi w czoło jednej płyty, połowa
+    # w płaszczyznę drugiej. Średnicę otworu bierze złączka
+    # (`edge_hole_diameter_mm`), ale kołek jest osobną pozycją katalogową.
+    "dowel": (
+        "diameter_mm", "length_mm", "unit",
+    ),
     # Kratka wentylacyjna wpuszczana w formatke (cokol, wieniec, plecy).
     # Kluczowe sa DWA wymiary, nie jeden: obrys widoczny i wyciecie w plycie.
     # Wyciecie na obrys to kratka wpadajaca do srodka, obrys na wyciecie to
