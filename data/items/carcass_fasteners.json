@@ -35,11 +35,11 @@
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Standard rynkowy zlacza mimosrodowego (bebenek fi15, trzpien 34 mm). Wartosci NIEZWERYFIKOWANE karta producenta — sprawdz przed wierceniem.",
+      "source": "Standard rynkowy zlacza mimosrodowego (bebenek fi15, trzpien 34 mm). Wartosci NIEZWERYFIKOWANE karta producenta — sprawdz przed wierceniem. face_hole_diameter_mm to gniazdo TRZPIENIA w licu plyty kryjacej (fi8); bebenek opisuja pola cam_* i jest w drugiej plycie zlacza.",
       "fastener_type": "cam_lock",
       "unit": "kpl",
       "length_mm": 34,
-      "face_hole_diameter_mm": 15,
+      "face_hole_diameter_mm": 8,
       "edge_hole_diameter_mm": 8,
       "edge_hole_depth_mm": 12,
       "cam_diameter_mm": 15,
@@ -48,7 +48,7 @@
       "uses_dowels": true,
       "dowel_sku": "KOLEK-8X30",
       "rozbieralne": true,
-      "description_pl": "Bebenek fi15 frezowany w plaszczyznie jednej plyty, trzpien wkrecany w czolo drugiej. Mebel da sie rozkrecic bez niszczenia plyty."
+      "description_pl": "Trzy otwory na dwoch plytach. Plyta dochodzaca CZOLEM: bebenek fi15 frezowany w jej licu 34 mm od krawedzi styku plus kanal fi8 w czole, w osi bebenka. Plyta kryjaca PLASZCZYZNA: trzpien wkrecany w lico. Mebel da sie rozkrecic bez niszczenia plyty."
     }
   },
   {
