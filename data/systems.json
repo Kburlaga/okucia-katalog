@@ -164,7 +164,7 @@
       600
     ],
     "h_classes": null,
-    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane szczegółowe Blum do uzupełnienia z katalogu Blum)",
+    "source": "Katalog TANDEMBOX antaro (74 str.) + instrukcja MA-513/2ML. POTWIERDZONE kartami: rozkroj dna i tylu LW-75 / LW-87, glebokosc dna NL-24 (stalowa scianka tylna NL-22), NL 270-650. Wysokosci scianek wg katalogu: N 68,5 / M 83,6 / K 115,6 mm oraz warianty z relingami 167 i 199 mm -- NIE wpisane jeszcze w h_classes, bo zmiana wysokosci scianki rusza liste formatek; dzis system liczy je wzorem zachowawczym i mowi o tym ostrzezeniem. Reszta rekordu to nadal zaslepka.",
     "slide_screw_x_front_mm": 37.0,
     "slide_screw_spacing_mm": 224.0,
     "shelf_pin_x_offset_mm": 37.0,
@@ -172,9 +172,10 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "drilling_source": "Karty Blum (MA-513/2ML s.4 'Befestigung der Korpusschienen | Cabinet profile screw positions' oraz katalog TANDEMBOX antaro s.60) sprawdzone 2026-08-30. WNIOSEK: Blum NIE PODAJE wspolrzednych wiercenia boku w milimetrach i nie da sie ich z tych kart wyprowadzic. Prowadnica korpusowa jest wlasnym szablonem: klada sie ja licem do czola boku i wkreca przez JEJ otwory, w miejscach zaznaczonych na rysunku symbolami, bez zadnego lancucha wymiarowego od krawedzi. Dwa rodzaje wkretow: A = wkret do plyty wiorowej 4x15 (bez nawiertu), B = wkret systemowy EURO art. 661.145. Liczba i rozmieszczenie zaleza od KLASY NOSNOSCI profilu (558/30 kg, 559/50 kg, TIP-ON 559T, 556/65 kg) oraz od NL, a czesc pozycji jest oznaczona gwiazdka jako opcjonalna ('gwarantuje optymalna stabilnosc'). Aplikacja nie modeluje ani klasy nosnosci, ani szablonu profilu. Stojace tu wczesniej slide_screw_x_front_mm=37 i slide_screw_spacing_mm=224 to LITERALY PRZENIESIONE Z GTV -- nie sa dana Bluma i nie odpowiadaja niczemu na profilu. Dlatego slide_screw_positions_known=false: rysunek boku nie pokazuje otworow prowadnicy dla tego systemu. Otwor wymyslony jest gorszy niz brak otworu -- stolarz wierci go i oslabia plyte w miejscu, ktore do niczego nie pasuje. Pola pozostaja w rekordzie, bo wymaga ich kontrakt hardware._DRAWER_FIELDS, ale nic ich juz nie czyta przy rysowaniu.",
     "pricing_sku_prefix": "BLUM-TANDEMBOX",
-    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "slide_screw_positions_known": false
   },
   "gtv_axis_pro_18": {
     "id": "gtv_axis_pro_18",
