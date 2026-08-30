@@ -106,9 +106,30 @@
       500,
       550
     ],
-    "h_classes": null,
+    "h_classes": {
+      "A": {
+        "nominal_mm": 84,
+        "real_mm": 84,
+        "min_carcass_height_mm": 105
+      },
+      "B": {
+        "nominal_mm": 135,
+        "real_mm": 135,
+        "min_carcass_height_mm": 160
+      },
+      "C": {
+        "nominal_mm": 199,
+        "real_mm": 199,
+        "min_carcass_height_mm": 224
+      },
+      "D": {
+        "nominal_mm": 167,
+        "real_mm": 167,
+        "min_carcass_height_mm": 192
+      }
+    },
     "load_capacity_kg": 40,
-    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane H-klas/płaszcza do uzupełnienia z karty MODERN BOX PRO)",
+    "source": "Kalkulator_Stolarski_3 HardwareSystem (dane H-klas/płaszcza do uzupełnienia z karty MODERN BOX PRO) WYSOKOSCI SCIANEK z instrukcji 450454 (2026-08-30): tabela s.7 'WYMIARY ELEMENTOW SZUFLADY Z PLYTY 16 MM' podaje H scianki tylnej wprost -- A 84, B 135, C 199, D 167 -- a rysunek obok oznacza nia plyte LW-87 x H, wiec to jest wymiar formatki, nie wysokosc handlowa. Minimalne wysokosci korpusu ze s.6 (blok 'Minimalna wysokosc korpusu'): 105 / 160 / 224 / 192; to zewnetrzny wymiar opisany na rysunku slowem 'min', sprawdzony okiem na dwoch pasmach (H=84 i H=199), a nie odczytany z kolejnosci tekstu. UWAGA na kolejnosc klas: karta nazywa 199 klasa C, a 167 klasa D -- odwrotnie niz rosnaco. Dobor idzie po min_carcass_height_mm, wiec litera nie ma znaczenia, ale przy porownaniu z AXIS PRO latwo sie pomylic. nominal_mm = real_mm swiadomie: GTV sprzedaje te linie pod nazwami H=84/135/167/199, czyli dokladnie wysokosciami scianki -- inaczej niz AXIS PRO, gdzie nazwa handlowa (86/120/168/200) jest o 1-4 mm wyzsza od formatki.",
     "slide_screw_x_front_mm": 37.0,
     "slide_screw_spacing_mm": 224.0,
     "shelf_pin_x_offset_mm": 37.0,
