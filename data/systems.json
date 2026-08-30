@@ -82,14 +82,12 @@
     "side_thickness_mm": null,
     "rail_required_above_front_mm": null,
     "available_nl_mm": [
-      250,
       300,
       350,
       400,
       450,
       500,
-      550,
-      600
+      550
     ],
     "h_classes": null,
     "load_capacity_kg": 40,
@@ -101,9 +99,17 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "drilling_source": "Instrukcja GTV MODERN BOX PRO (PDF producenta 450454, 10 stron), s.6 'WYMIARY MONTAZOWE DLA PROWADNIC'. Karta podaje to wprost tabelka, nie rysunkiem do odczytu: pierwszy otwor 37 mm od krawedzi szafki, rozstaw drugiego 192 mm dla NL 300-400 i 224 mm dla NL 450-550. Stan poprzedni - staly rozstaw 224 dla kazdego NL - byl wykazalnie bledny: dla NL 300-400 otwor wypadal 32 mm za daleko. POPRAWIONO takze available_nl_mm: karta i seed SKU (PB-MBPRO-*) znaja wylacznie NL 300-550, a katalog deklarowal 250-600, czyli dwie dlugosci, ktorych GTV w tej linii nie robi. Pozostale offsety (mocowanie frontu, wysokosci korpusu) nadal przeniesione z Kalkulator_Stolarski_3/backend/drilling.py i NIEZWERYFIKOWANE.",
     "pricing_sku_prefix": "GTV-MBPRO",
-    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "slide_screw_spacing_by_nl": {
+      "300": 192.0,
+      "350": 192.0,
+      "400": 192.0,
+      "450": 224.0,
+      "500": 224.0,
+      "550": 224.0
+    }
   },
   "blum_antaro": {
     "id": "blum_antaro",
@@ -238,9 +244,11 @@
     "slide_screw_spacing_mm": 224.0,
     "slide_screw_spacing_by_nl": {
       "300": 128.0,
-      "350": 160.0,
+      "350": 128.0,
       "400": 192.0,
-      "450": 224.0
+      "450": 192.0,
+      "500": 224.0,
+      "550": 224.0
     },
     "shelf_pin_x_offset_mm": 37.0,
     "front_fix_second_hole_dy_mm": 64.0,
@@ -275,7 +283,7 @@
     },
     "carcass_depth_formula": "LT = NL + 3",
     "drilling_verified": false,
-    "drilling_source": "Katalog ATM SZUFLADY FUTURA (PDF producenta): schemat wiercen s.3, rozkroj i wymiary s.4-7. Pierwszy otwor prowadnicy 37 mm od krawedzi szafki. Rozstaw drugiego otworu zalezy od NL: 128/160/192/224 dla NL 300/350/400/450 (odczyt jednoznaczny). Dla NL 500 i 550 schemat pokazuje TRZECI otwor montazowy, a odczyt wymiarow (224/256) jest niejednoznaczny - do potwierdzenia. Do tego czasu obie dlugosci licza sie zachowawczo wg slide_screw_spacing_mm.",
+    "drilling_source": "Katalog ATM SZUFLADY FUTURA (PDF producenta), schemat wiercen s.3. POPRAWIONO 2026-08-30 po ponownym odczycie rysunku w powiekszeniu: prowadnica ma TRZY otwory montazowe, a nie dwa, i wymiary chodza PARAMI na grupe dlugosci, a nie po jednym na NL. Poprzedni odczyt rozdzielil pary jeden-na-NL i przez to mylil sie o 32 mm na dwoch dlugosciach (350 mialo 160 zamiast 128, 450 mialo 224 zamiast 192). Z karty: pierwszy otwor 37 mm od krawedzi szafki dla kazdego NL; NL 300 i 350 -> drugi 128, trzeci 160; NL 400 i 450 -> drugi 192, trzeci 224; NL 500 i 550 -> drugi 224, trzeci 256. slide_screw_spacing_by_nl niesie DRUGI otwor, bo tylko taki umie dzis narysowac model. TRZECI otwor nie jest rysowany - dlatego drilling_verified zostaje false: prowadnica przykrecona dwoma wkretami zamiast trzema trzyma slabiej, a rysunek o tym nie mowi.",
     "pricing_sku_prefix": "ATM-FUTURA",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta.",
@@ -308,9 +316,11 @@
     "slide_screw_spacing_mm": 224.0,
     "slide_screw_spacing_by_nl": {
       "300": 128.0,
-      "350": 160.0,
+      "350": 128.0,
       "400": 192.0,
-      "450": 224.0
+      "450": 192.0,
+      "500": 224.0,
+      "550": 224.0
     },
     "shelf_pin_x_offset_mm": 37.0,
     "front_fix_second_hole_dy_mm": 64.0,
@@ -345,7 +355,7 @@
     },
     "carcass_depth_formula": "LT = NL + 3 (frontowa i wewnetrzna); LT = NL + 12 gdy frontowa i wewnetrzna razem",
     "drilling_verified": false,
-    "drilling_source": "Instrukcja ATM FUTURA EVO (PDF producenta, 4 str.): rozstawy otworow prowadnicy s.1, wymiary montazowe i mocowanie frontu s.2. Pierwszy otwor 37 mm od krawedzi szafki. Rysunek pokazuje wprost 128 i 224 oraz trzeci otwor przy dluzszych NL, ale nie rozpisuje wartosci dla kazdej dlugosci osobno - mapa przeniesiona z katalogu FUTURA (ta sama prowadnica), NL 500 i 550 licza sie zachowawczo. Do potwierdzenia.",
+    "drilling_source": "Katalog ATM SZUFLADY FUTURA (PDF producenta), schemat wiercen s.3. POPRAWIONO 2026-08-30 po ponownym odczycie rysunku w powiekszeniu: prowadnica ma TRZY otwory montazowe, a nie dwa, i wymiary chodza PARAMI na grupe dlugosci, a nie po jednym na NL. Poprzedni odczyt rozdzielil pary jeden-na-NL i przez to mylil sie o 32 mm na dwoch dlugosciach (350 mialo 160 zamiast 128, 450 mialo 224 zamiast 192). Z karty: pierwszy otwor 37 mm od krawedzi szafki dla kazdego NL; NL 300 i 350 -> drugi 128, trzeci 160; NL 400 i 450 -> drugi 192, trzeci 224; NL 500 i 550 -> drugi 224, trzeci 256. slide_screw_spacing_by_nl niesie DRUGI otwor, bo tylko taki umie dzis narysowac model. TRZECI otwor nie jest rysowany - dlatego drilling_verified zostaje false: prowadnica przykrecona dwoma wkretami zamiast trzema trzyma slabiej, a rysunek o tym nie mowi. Wariant EVO: ta sama prowadnica co FUTURA, wlasnej karty z wymiarami montazowymi nadal brak (plik w dokumentacji uzytkownika to ulotka produktowa, nie karta techniczna).",
     "pricing_sku_prefix": "ATM-EVO",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Instrukcja ATM FUTURA EVO (PDF producenta). Modele PK-1800 H90, PK-1801 H122, PK-1802 H172, PK-1803 H203; NL 300-550; nosnosc 40 kg; 80 000 cykli; regulacja 3D. Naglowek 'Wymiary ciecia dla plyty 18mm' i grubosc 18 na rysunku dna i tylu - to jest wariant NA PLYTE 18, w odroznieniu od linii FUTURA (PK-16xx), ktora producent rozkraja z plyty 16. Wzory ciecia sa w OBU liniach identyczne (dno LW-75 na NL-24, tyl LW-87, wysokosci 84/116/167/199) - rozni sie grubosc plyty i minimalna wysokosc korpusu (125/157/207/239 zamiast 112/144/194/230)."
