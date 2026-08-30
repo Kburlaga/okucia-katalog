@@ -54,9 +54,19 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow.",
+    "drilling_source": "Rozstaw otworow prowadnicy PRZENIESIONY z karty GTV AXIS PRO 18 (2026-08-30). Ta sama prowadnica - warianty 16 i 18 roznia sie wylacznie grubascia plyty skrzynki, nie mocowaniem do boku szafki. Stan poprzedni byl wykazalnie bledny, nie tylko niepotwierdzony: staly rozstaw 224 mm przy pierwszym otworze 37 mm daje drugi otwor na 261 mm, czyli poza prowadnica NL 250 i NL 300. Pozostale offsety nadal przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py i NIEZWERYFIKOWANE - karty wariantu 16 mm brak w posiadanej dokumentacji.",
     "pricing_sku_prefix": "GTV-PRO",
-    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta."
+    "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
+    "slide_screw_spacing_by_nl": {
+      "250": 96.0,
+      "300": 128.0,
+      "350": 128.0,
+      "400": 192.0,
+      "450": 224.0,
+      "500": 224.0,
+      "550": 224.0,
+      "600": 224.0
+    }
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
@@ -186,7 +196,7 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta, 12 str.): wymiary montazowe s.5, elementy z plyty 18 mm s.7 i 12. POTWIERDZONE karta: pierwszy otwor prowadnicy 37 mm od krawedzi szafki, mocowanie frontu 15,5 i min. 47,5, minimalne wysokosci korpusu 115/147/198/230, reling zalecany powyzej 284 mm frontu, NL + 10 na glebokosc korpusu. ROZSTAW DRUGIEGO OTWORU ZALEZY OD NL (96/128/192/224 - rysunek s.5), a nie jest staly. Przypisanie 250->96, 300/350->128, 400/450->192, 500/550/600->224 to odczyt z rysunku; wiersze 300 i 450 dziela linie wymiarowa z sasiednim i wymagaja potwierdzenia. Trzeci otwor przy najdluzszych NL (+128 wg lancucha wymiarowego) nie jest jeszcze modelowany.",
+    "drilling_source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta, 11 stron, numeracja nadrukowana 2-12): wymiary montazowe nadruk s.5, elementy z plyty 18 mm nadruk s.7 i 12. POTWIERDZONE karta: pierwszy otwor prowadnicy 37 mm od krawedzi szafki, mocowanie frontu 15,5 i min. 47,5, minimalne wysokosci korpusu 115/147/198/230, reling zalecany powyzej 284 mm frontu, NL + 10 na glebokosc korpusu. ROZSTAW DRUGIEGO OTWORU odczytany z leaderow wymiarowych rysunku (2026-08-30), nie na oko: kazda para linii pionowych ma znany wymiar, a skala wychodzi 0,2711 pt/mm z rozrzutem 0,0013 na czterech niezaleznych parach - przypisanie NL do rozstawu jest wiec jednoznaczne. 250->96, 300->128, 350->128, 400->192, 450/500/550/600->224. POPRAWIONO 2026-08-30: NL 450 mialo 192 zamiast 224 (blad odczytu z rysunku - leader 224 obejmuje wiersze 450-600, nie 500-600). POZOSTAJE do zrobienia: TRZECI otwor przy NL 600, 128 mm za drugim (leader x=138,8->173,4 obejmuje wylacznie wiersz 600) - nie jest jeszcze modelowany, dlatego drilling_verified zostaje false.",
     "pricing_sku_prefix": "GTV-PRO18",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "box_board_thickness_mm": 18.0,
@@ -195,7 +205,7 @@
       "300": 128.0,
       "350": 128.0,
       "400": 192.0,
-      "450": 192.0,
+      "450": 224.0,
       "500": 224.0,
       "550": 224.0,
       "600": 224.0
