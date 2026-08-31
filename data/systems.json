@@ -26,22 +26,38 @@
       "A": {
         "nominal_mm": 86,
         "real_mm": 84,
-        "min_carcass_height_mm": 115
+        "min_carcass_height_mm": 115,
+        "front_fix_offsets_mm": [
+          32.0
+        ]
       },
       "B": {
         "nominal_mm": 120,
         "real_mm": 116,
-        "min_carcass_height_mm": 147
+        "min_carcass_height_mm": 147,
+        "front_fix_offsets_mm": [
+          32.0
+        ]
       },
       "C": {
         "nominal_mm": 168,
         "real_mm": 167,
-        "min_carcass_height_mm": 198
+        "min_carcass_height_mm": 198,
+        "front_fix_offsets_mm": [
+          32.0,
+          96.0,
+          128.0
+        ]
       },
       "D": {
         "nominal_mm": 200,
         "real_mm": 199,
-        "min_carcass_height_mm": 230
+        "min_carcass_height_mm": 230,
+        "front_fix_offsets_mm": [
+          32.0,
+          96.0,
+          128.0
+        ]
       }
     },
     "synchro_rod_cut_formula": "LW-127",
@@ -53,8 +69,8 @@
     "front_fix_second_hole_dy_mm": 64.0,
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
-    "drilling_verified": false,
-    "drilling_source": "Rozstaw otworow prowadnicy PRZENIESIONY z karty GTV AXIS PRO 18 (2026-08-30). Ta sama prowadnica - warianty 16 i 18 roznia sie wylacznie grubascia plyty skrzynki, nie mocowaniem do boku szafki. Stan poprzedni byl wykazalnie bledny, nie tylko niepotwierdzony: staly rozstaw 224 mm przy pierwszym otworze 37 mm daje drugi otwor na 261 mm, czyli poza prowadnica NL 250 i NL 300. Pozostale offsety nadal przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py i NIEZWERYFIKOWANE - karty wariantu 16 mm brak w posiadanej dokumentacji. FORMAT POLA: wartosci to LISTA przesuniec kolejnych otworow od otworu PIERWSZEGO (slide_screw_x_front_mm), a nie odleglosci miedzy sasiednimi -- na kartach wszystkie strzalki wychodza z tej samej linii. Jeden element = prowadnica na dwa wkrety, dwa elementy = na trzy.",
+    "drilling_verified": true,
+    "drilling_source": "Instrukcje AXIS PRO wariant 16 mm: montazni navod (CZ, 5 str.) i instrukcja A4 (PL, 2 str.), sprawdzone 2026-08-31. POTWIERDZONE WLASNA KARTA: pierwszy otwor prowadnicy 37 i rozstawy 128/192/224 dla NL 300-550 (CZ s.2), odsuw prowadnicy od dna swiatla 32, mocowanie frontu 15,5 i min. 47,5, wymiar 44 i 37,5 (CZ s.2 i s.3), minimalne wysokosci korpusu 115/147/198/230, wysokosci scianek 84/116/167/199 (tabela CZ s.3), rozkroj dno LW-75 x NL-24 i tyl LW-87 przy plycie 16 mm (PL s.2). LANCUCH MOCOWAN FRONTU IDENTYCZNY jak w wariancie 18: klasy A i B maja min 47,5 | 32, klasy C i D min 47,5 | 32 | 64 | 32 (CZ s.2 dla H=86 i 120, s.3 dla H=168 i 200). PRZENIESIONE Z KARTY WARIANTU 18, bo prowadnica i skrzynka sa te same, a wlasna karta tego nie obejmuje: rozstaw dla NL 250 (96) i NL 600 (224 + trzeci otwor 352) oraz prog relingu 284 mm — karty 16 mm wspominaja reling, ale progu nie podaja. NADAL NIE Z KARTY: shelf_pin_x_offset_mm (37) i carcass_dowel_x_offset_mm (50) to ustawienia aplikacji, nie dane GTV; side_thickness_mm (14) nie jest przez aplikacje czytane; synchro_rod_cut_formula (LW-127) nie wystepuje w tych kartach.",
     "pricing_sku_prefix": "GTV-PRO",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "slide_screw_spacing_by_nl": {
@@ -83,13 +99,15 @@
         224.0,
         352.0
       ]
-    }
+    },
+    "box_board_thickness_mm": 16.0,
+    "nl_depth_clearance_mm": 10.0
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
     "name": "GTV MODERN BOX PRO",
     "type": "drawer",
-    "offset_prowadnica": 32.0,
+    "offset_prowadnica": 33.0,
     "front_fix_offset_internal": 47.5,
     "base_front_y": 47.5,
     "fix_x_internal": 15.5,
@@ -110,22 +128,37 @@
       "A": {
         "nominal_mm": 84,
         "real_mm": 84,
-        "min_carcass_height_mm": 105
+        "min_carcass_height_mm": 105,
+        "front_fix_offsets_mm": [
+          32.0
+        ]
       },
       "B": {
         "nominal_mm": 135,
         "real_mm": 135,
-        "min_carcass_height_mm": 160
+        "min_carcass_height_mm": 160,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "sleeve_hole_offset_mm": 96.0
       },
       "C": {
         "nominal_mm": 199,
         "real_mm": 199,
-        "min_carcass_height_mm": 224
+        "min_carcass_height_mm": 224,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "sleeve_hole_offset_mm": 160.0
       },
       "D": {
         "nominal_mm": 167,
         "real_mm": 167,
-        "min_carcass_height_mm": 192
+        "min_carcass_height_mm": 192,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "sleeve_hole_offset_mm": 128.0
       }
     },
     "load_capacity_kg": 40,
@@ -137,7 +170,7 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Instrukcja GTV MODERN BOX PRO (PDF producenta 450454, 10 stron), s.6 'WYMIARY MONTAZOWE DLA PROWADNIC'. Karta podaje to wprost tabelka, nie rysunkiem do odczytu: pierwszy otwor 37 mm od krawedzi szafki, rozstaw drugiego 192 mm dla NL 300-400 i 224 mm dla NL 450-550. Stan poprzedni - staly rozstaw 224 dla kazdego NL - byl wykazalnie bledny: dla NL 300-400 otwor wypadal 32 mm za daleko. POPRAWIONO takze available_nl_mm: karta i seed SKU (PB-MBPRO-*) znaja wylacznie NL 300-550, a katalog deklarowal 250-600, czyli dwie dlugosci, ktorych GTV w tej linii nie robi. Pozostale offsety (mocowanie frontu, wysokosci korpusu) nadal przeniesione z Kalkulator_Stolarski_3/backend/drilling.py i NIEZWERYFIKOWANE. FORMAT POLA: wartosci to LISTA przesuniec kolejnych otworow od otworu PIERWSZEGO (slide_screw_x_front_mm), a nie odleglosci miedzy sasiednimi -- na kartach wszystkie strzalki wychodza z tej samej linii. Jeden element = prowadnica na dwa wkrety, dwa elementy = na trzy.",
+    "drilling_source": "Instrukcja GTV MODERN BOX PRO (PDF producenta 450454, 10 stron), s.6 'WYMIARY MONTAZOWE DLA PROWADNIC'. Karta podaje to wprost tabelka, nie rysunkiem do odczytu: pierwszy otwor 37 mm od krawedzi szafki, rozstaw drugiego 192 mm dla NL 300-400 i 224 mm dla NL 450-550. Stan poprzedni - staly rozstaw 224 dla kazdego NL - byl wykazalnie bledny: dla NL 300-400 otwor wypadal 32 mm za daleko. POPRAWIONO takze available_nl_mm: karta i seed SKU (PB-MBPRO-*) znaja wylacznie NL 300-550, a katalog deklarowal 250-600, czyli dwie dlugosci, ktorych GTV w tej linii nie robi. Pozostale offsety (mocowanie frontu, wysokosci korpusu) nadal przeniesione z Kalkulator_Stolarski_3/backend/drilling.py i NIEZWERYFIKOWANE. FORMAT POLA: wartosci to LISTA przesuniec kolejnych otworow od otworu PIERWSZEGO (slide_screw_x_front_mm), a nie odleglosci miedzy sasiednimi -- na kartach wszystkie strzalki wychodza z tej samej linii. Jeden element = prowadnica na dwa wkrety, dwa elementy = na trzy. POLA MONTAZOWE przejrzane 2026-08-31 (s.6). ODSUW PROWADNICY POPRAWIONY 32 -> 33: przekroj boczny ma te sama budowe co w AXIS PRO, ale inne liczby -- dolny rzad wkretow wypada 33 mm od dna swiatla, gorny 49 (AXIS ma odpowiednio 32 i 44). Aplikacja czyta dolny rzad, wiec dotad mylila sie o 1 mm na kazdym otworze prowadnicy tego systemu. MOCOWANIE FRONTU: dwa otwory Ø2 przy KAZDEJ klasie, 47,5 i +32 -- inaczej niz w AXIS, gdzie klasy C i D maja cztery. Sprawdzone okiem na widoku frontu dla H=84 i H=199. Wczesniej system nie mial front_fix_offsets_mm i przy wysokim froncie spadal na prog 180 mm z przesunieciem 64, czyli rysowal otwor w miejscu, ktorego karta nie zna. CZEGO APLIKACJA NADAL NIE RYSUJE: gorny rzad wkretow prowadnicy (49) oraz otwor Ø10 pod mufe we froncie -- karta stawia go 96 mm (H=135), 128 (H=167) i 160 (H=199) nad pierwszym otworem Ø2, a przy H=84 nie ma go wcale. Wartosci zapisane w slide_screw_second_row_mm i sleeve_hole_offset_mm, zeby nie przepadly.",
     "pricing_sku_prefix": "GTV-MBPRO",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "slide_screw_spacing_by_nl": {
@@ -159,7 +192,8 @@
       "550": [
         224.0
       ]
-    }
+    },
+    "slide_screw_second_row_mm": 49.0
   },
   "blum_antaro": {
     "id": "blum_antaro",
