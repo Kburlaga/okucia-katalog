@@ -61,7 +61,14 @@
     ],
     "cup_diameter_mm": 35.0,
     "verified": false,
-    "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow. oraz module_geometry.hinge_count (progi warsztatowe)."
+    "source": "Instrukcja GTV Prestige+ (ZM-Prestige-, 2 str.), sprawdzona 2026-08-31. Z KARTY: puszka Ø35 gleb. 12, kat otwarcia 100 stopni, prowadnik A = 37 mm od krawedzi korpusu (dla zawiasu nakladanego i blizniaczego; wpuszczany ma A = 37 + Gf + 1), grubosc frontu 16-18 mm, regulacja +/-1,5 mm. Tabela s.2 wiaze NALOZENIE FRONTU z odlegloscia puszki od krawedzi: dla wysokosci prowadnika H = 0 jest NF 16 -> K 3, NF 17 -> K 4, NF 18 -> K 5. K mierzy sie do BRZEGU puszki, wiec os wypada K + 17,5. NALOZENIA 14 i 15 NIE SA OSIAGALNE przy H = 0 -- karta zostawia pod nimi puste pola; wymagaja innej wysokosci prowadnika (H = 1 albo 2), czego aplikacja nie modeluje. NIE Z KARTY i nadal niepotwierdzone: hinge_y_inset_mm (100) i hinge_count_thresholds -- to sa progi warsztatowe, zadna karta ich nie podaje.",
+    "plate_offset_mm": 37.0,
+    "opening_angle_deg": 100.0,
+    "cup_offsets_by_overlay_mm": {
+      "16": 20.5,
+      "17": 21.5,
+      "18": 22.5
+    }
   },
   "hettich_sensys": {
     "id": "hettich_sensys",
