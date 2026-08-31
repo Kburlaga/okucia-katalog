@@ -226,25 +226,37 @@
         "nominal_mm": 86,
         "real_mm": 84,
         "min_carcass_height_mm": 115,
-        "front_fix_second_hole": false
+        "front_fix_offsets_mm": [
+          32.0
+        ]
       },
       "B": {
         "nominal_mm": 120,
         "real_mm": 116,
         "min_carcass_height_mm": 147,
-        "front_fix_second_hole": false
+        "front_fix_offsets_mm": [
+          32.0
+        ]
       },
       "C": {
         "nominal_mm": 168,
         "real_mm": 167,
         "min_carcass_height_mm": 198,
-        "front_fix_second_hole": true
+        "front_fix_offsets_mm": [
+          32.0,
+          96.0,
+          128.0
+        ]
       },
       "D": {
         "nominal_mm": 200,
         "real_mm": 199,
         "min_carcass_height_mm": 230,
-        "front_fix_second_hole": true
+        "front_fix_offsets_mm": [
+          32.0,
+          96.0,
+          128.0
+        ]
       }
     },
     "synchro_rod_cut_formula": "LW-127",
@@ -257,7 +269,7 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": true,
-    "drilling_source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta, 11 stron, numeracja nadrukowana 2-12): wymiary montazowe nadruk s.5, elementy z plyty 18 mm nadruk s.7 i 12. POTWIERDZONE karta: pierwszy otwor prowadnicy 37 mm od krawedzi szafki, mocowanie frontu 15,5 i min. 47,5, minimalne wysokosci korpusu 115/147/198/230, reling zalecany powyzej 284 mm frontu, NL + 10 na glebokosc korpusu. ROZSTAW DRUGIEGO OTWORU odczytany z leaderow wymiarowych rysunku (2026-08-30), nie na oko: kazda para linii pionowych ma znany wymiar, a skala wychodzi 0,2711 pt/mm z rozrzutem 0,0013 na czterech niezaleznych parach - przypisanie NL do rozstawu jest wiec jednoznaczne. 250->96, 300->128, 350->128, 400->192, 450/500/550/600->224. POPRAWIONO 2026-08-30: NL 450 mialo 192 zamiast 224 (blad odczytu z rysunku - leader 224 obejmuje wiersze 450-600, nie 500-600). TRZECI otwor przy NL 600 (128 mm za drugim, czyli 352 od pierwszego; leader x=138,8->173,4 obejmuje wylacznie wiersz 600) jest juz w mapie i trafia na rysunek. FORMAT POLA: wartosci to LISTA przesuniec kolejnych otworow od otworu PIERWSZEGO (slide_screw_x_front_mm), a nie odleglosci miedzy sasiednimi -- na kartach wszystkie strzalki wychodza z tej samej linii. Jeden element = prowadnica na dwa wkrety, dwa elementy = na trzy. DRUGIE MOCOWANIE FRONTU (2026-08-31): karta nadruk s.6 pokazuje wymiar 64 przy H=168 i H=200, a przy H=86 i H=120 go NIE MA -- czyli decyduje KLASA szuflady, nie wysokosc frontu. Aplikacja liczyla to z progu front_fix_second_hole_min_h_mm=180 (liczba spoza karty, wlasne przelozenie) i przy swietle 160-197 mm wiercila 4 mocowania tam, gdzie GTV pokazuje 2. Flaga front_fix_second_hole siedzi teraz przy klasie; prog wysokosci zostaje jako zapas dla systemow bez tabelki klas. STATUS 2026-08-31: przejscie calej karty pole po polu. POTWIERDZONE wszystko, czego aplikacja uzywa z tego systemu: pierwszy otwor prowadnicy 37 i rozstawy per NL (nadruk s.5), odsuw prowadnicy od dna swiatla 32 (przekroj s.5), mocowanie frontu 15,5 i min. 47,5 (s.5), drugie mocowanie 64 przy klasach C i D (s.6), wysokosci scianek 84/116/167/199 i rozkroj dno LW-75 x NL-24, tyl LW-87 (s.7), glebokosc korpusu NL+10 (s.7), reling powyzej 284 mm frontu (s.7), nosnosc 40 kg (s.1). Dlatego drilling_verified = true. UWAGA, CZEGO TO NIE OBEJMUJE: `shelf_pin_x_offset_mm` (37) i `carcass_dowel_x_offset_mm` (50) to NIE SA dane GTV -- podporki polek i kolki korpusu nie naleza do systemu szuflad, siedza w tym rekordzie tylko dlatego, ze wierci sie je w tym samym boku. Zostaja niepotwierdzone i zglasza to osobna uwaga. `side_thickness_mm` (14) nie jest przez aplikacje czytane w ogole, a `synchro_rod_cut_formula` (LW-127) nie wystepuje w tej karcie. `front_fix_second_hole_min_h_mm` (180) zostaje wylacznie jako zapas dla systemow bez tabelki klas -- dla tego systemu nie jest juz uzywany.",
+    "drilling_source": "Karta techniczna GTV AXIS PRO 18 (PDF producenta, 11 stron, numeracja nadrukowana 2-12): wymiary montazowe nadruk s.5, elementy z plyty 18 mm nadruk s.7 i 12. POTWIERDZONE karta: pierwszy otwor prowadnicy 37 mm od krawedzi szafki, mocowanie frontu 15,5 i min. 47,5, minimalne wysokosci korpusu 115/147/198/230, reling zalecany powyzej 284 mm frontu, NL + 10 na glebokosc korpusu. ROZSTAW DRUGIEGO OTWORU odczytany z leaderow wymiarowych rysunku (2026-08-30), nie na oko: kazda para linii pionowych ma znany wymiar, a skala wychodzi 0,2711 pt/mm z rozrzutem 0,0013 na czterech niezaleznych parach - przypisanie NL do rozstawu jest wiec jednoznaczne. 250->96, 300->128, 350->128, 400->192, 450/500/550/600->224. POPRAWIONO 2026-08-30: NL 450 mialo 192 zamiast 224 (blad odczytu z rysunku - leader 224 obejmuje wiersze 450-600, nie 500-600). TRZECI otwor przy NL 600 (128 mm za drugim, czyli 352 od pierwszego; leader x=138,8->173,4 obejmuje wylacznie wiersz 600) jest juz w mapie i trafia na rysunek. FORMAT POLA: wartosci to LISTA przesuniec kolejnych otworow od otworu PIERWSZEGO (slide_screw_x_front_mm), a nie odleglosci miedzy sasiednimi -- na kartach wszystkie strzalki wychodza z tej samej linii. Jeden element = prowadnica na dwa wkrety, dwa elementy = na trzy. DRUGIE MOCOWANIE FRONTU (2026-08-31): karta nadruk s.6 pokazuje wymiar 64 przy H=168 i H=200, a przy H=86 i H=120 go NIE MA -- czyli decyduje KLASA szuflady, nie wysokosc frontu. Aplikacja liczyla to z progu front_fix_second_hole_min_h_mm=180 (liczba spoza karty, wlasne przelozenie) i przy swietle 160-197 mm wiercila 4 mocowania tam, gdzie GTV pokazuje 2. Flaga front_fix_second_hole siedzi teraz przy klasie; prog wysokosci zostaje jako zapas dla systemow bez tabelki klas. STATUS 2026-08-31: przejscie calej karty pole po polu. POTWIERDZONE wszystko, czego aplikacja uzywa z tego systemu: pierwszy otwor prowadnicy 37 i rozstawy per NL (nadruk s.5), odsuw prowadnicy od dna swiatla 32 (przekroj s.5), mocowanie frontu 15,5 i min. 47,5 (s.5), drugie mocowanie 64 przy klasach C i D (s.6), wysokosci scianek 84/116/167/199 i rozkroj dno LW-75 x NL-24, tyl LW-87 (s.7), glebokosc korpusu NL+10 (s.7), reling powyzej 284 mm frontu (s.7), nosnosc 40 kg (s.1). Dlatego drilling_verified = true. UWAGA, CZEGO TO NIE OBEJMUJE: `shelf_pin_x_offset_mm` (37) i `carcass_dowel_x_offset_mm` (50) to NIE SA dane GTV -- podporki polek i kolki korpusu nie naleza do systemu szuflad, siedza w tym rekordzie tylko dlatego, ze wierci sie je w tym samym boku. Zostaja niepotwierdzone i zglasza to osobna uwaga. `side_thickness_mm` (14) nie jest przez aplikacje czytane w ogole, a `synchro_rod_cut_formula` (LW-127) nie wystepuje w tej karcie. `front_fix_second_hole_min_h_mm` (180) zostaje wylacznie jako zapas dla systemow bez tabelki klas -- dla tego systemu nie jest juz uzywany. POPRAWKA 2026-08-31 (drugie podejscie): flaga front_fix_second_hole byla za uboga. Widok frontu od tylu (s.5 dla H=86, s.6 dla pozostalych) pokazuje LANCUCH otworow Ø2, a nie jeden dodatkowy: A i B maja dwa otwory (min 47,5 | 32), C i D cztery (min 47,5 | 32 | 64 | 32). Aplikacja rysowala polowe tego dla kazdej klasy, a jej front_fix_second_hole_dy_mm=64 nie odpowiadal zadnej rzeczywistej pozycji -- przesuniecia od pierwszego otworu to 32, 96 i 128. Pole front_fix_offsets_mm trzyma je wprost. UWAGA: sam PIERWSZY otwor (min. 47,5) ma na karcie dwa widoki liczone od roznych krawedzi i tego jeszcze nie rozstrzygnieto -- offsety sa wzgledne, wiec ta poprawka jest od tego niezalezna.",
     "pricing_sku_prefix": "GTV-PRO18",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "box_board_thickness_mm": 18.0,
