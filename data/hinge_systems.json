@@ -3,7 +3,7 @@
     "id": "blum_clip_top",
     "name": "Blum Clip Top",
     "type": "hinge",
-    "puszka_offset": 22.0,
+    "puszka_offset": 22.5,
     "hinge_y_inset_mm": 100.0,
     "hinge_count_thresholds": [
       [
@@ -29,7 +29,15 @@
     ],
     "cup_diameter_mm": 35.0,
     "verified": false,
-    "source": "Przeniesione 1:1 z Kalkulator_Stolarski_3/backend/drilling.py (literaly w kodzie). NIEZWERYFIKOWANE z kartami producentow. oraz module_geometry.hinge_count (progi warsztatowe)."
+    "source": "Katalog i podrecznik Blum 2024/2025 (PL, 758 str.), sekcja 'Systemy zawiasow', strona PDF 81 = drukowana 77, blok 'Odleglosc puszki TB'. Przeczytana 2026-09-02. Z KARTY: zawias CLIP top 110 stopni, tabela wiaze NALOZENIE FRONTU FA z ODLEGLOSCIA PUSZKI TB przy dystansie prowadnika MD = 0: FA 14->TB 3, 15->4, 16->5, 17->6, 18->7. TB mierzy sie do BRZEGU puszki, wiec os wypada TB + 17,5 (polowa O35) -- kontrola: FA 16 daje os 22,5, czyli klasyczny wymiar Blum. Tabela ma tez wiersze MD 3/6/9, ktore przesuwaja te same TB na nizsze nalozenia (MD 9: FA 5-9); aplikacja nie modeluje dystansu prowadnika, wiec czyta wylacznie MD = 0. Nalozenia ponizej 14 przy MD = 0 NIE SA OSIAGALNE -- wymagaja grubszego prowadnika, tak samo jak przy GTV Prestige. NADAL NIE Z KARTY: plate_offset_mm (odsuw prowadnika od krawedzi korpusu) -- jest w sekcji 'Prowadniki', okolice strony PDF 154, jeszcze nieczytanej; dopoki go nie ma, rysunek boku bierze wartosc awaryjna 37 z systemu szuflad, co jest zgadywaniem. Dlatego verified zostaje false. hinge_y_inset_mm i hinge_count_thresholds to progi warsztatowe, zadna karta ich nie poda.",
+    "cup_offsets_by_overlay_mm": {
+      "14": 20.5,
+      "15": 21.5,
+      "16": 22.5,
+      "17": 23.5,
+      "18": 24.5
+    },
+    "opening_angle_deg": 110.0
   },
   "gtv_prestige": {
     "id": "gtv_prestige",
