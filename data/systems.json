@@ -201,9 +201,9 @@
     "name": "Blum Antaro",
     "type": "drawer",
     "offset_prowadnica": 37.0,
-    "front_fix_offset_internal": 46.0,
-    "base_front_y": 46.0,
-    "fix_x_internal": 25.0,
+    "front_fix_offset_internal": 47.5,
+    "base_front_y": 47.5,
+    "fix_x_internal": 15.5,
     "cut_bottom_width_reduction": 75.0,
     "cut_bottom_depth_reduction": 24.0,
     "cut_back_width_reduction": 87.0,
@@ -217,10 +217,49 @@
       450,
       500,
       550,
-      600
+      600,
+      650
     ],
-    "h_classes": null,
-    "source": "Katalog TANDEMBOX antaro (74 str.) + instrukcja MA-513/2ML. POTWIERDZONE kartami: rozkroj dna i tylu LW-75 / LW-87, glebokosc dna NL-24 (stalowa scianka tylna NL-22), NL 270-650. Wysokosci scianek wg katalogu: N 68,5 / M 83,6 / K 115,6 mm oraz warianty z relingami 167 i 199 mm -- NIE wpisane jeszcze w h_classes, bo zmiana wysokosci scianki rusza liste formatek; dzis system liczy je wzorem zachowawczym i mowi o tym ostrzezeniem. Reszta rekordu to nadal zaslepka.",
+    "h_classes": {
+      "M": {
+        "nominal_mm": 84,
+        "real_mm": 84,
+        "min_carcass_height_mm": 98.5,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "zarge_height_mm": 83.6
+      },
+      "K": {
+        "nominal_mm": 116,
+        "real_mm": 116,
+        "min_carcass_height_mm": 130.5,
+        "front_fix_offsets_mm": [
+          32.0,
+          64.0
+        ],
+        "zarge_height_mm": 115.6
+      },
+      "C": {
+        "nominal_mm": 167,
+        "real_mm": 167,
+        "min_carcass_height_mm": 192,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "sleeve_hole_offset_mm": 128.0
+      },
+      "D": {
+        "nominal_mm": 199,
+        "real_mm": 199,
+        "min_carcass_height_mm": 224,
+        "front_fix_offsets_mm": [
+          32.0
+        ],
+        "sleeve_hole_offset_mm": 160.0
+      }
+    },
+    "source": "Katalog TANDEMBOX antaro (74 str., wersja niemiecka) + instrukcja MA-513/2ML. PRZECZYTANY POLE PO POLU 2026-09-02, strony 'Planungsinformation'. Wysokosci scianek s.11: N 68,5 / M 83,6 / K 115,6, NL 270-650, szerokosc korpusu 275-1200. Rozkroj (blok 'Zuschnittmasse fur 16 mm Spanplatten', s.29/33/51/53/55): tyl LW-87, dno LW-75 x NL-24 przy sciance drewnianej i NL-22 przy stalowej -- IDENTYCZNIE jak GTV, wiec wzory aplikacji obejmuja tez Bluma. Glebokosc: Platzbedarf pokazuje NL + 3, stad nl_depth_clearance_mm = 3. MIN. WYSOKOSCI KORPUSU z bloku 'Platzbedarf im Korpus' jako suma dwoch odcinkow lancucha (gorny + min 33 pod spodem): N 49,5+33=82,5; M 65,5+33=98,5; K 97,5+33=130,5; C 159+33=192; D 191+33=224. Kontrola: D wychodzi 224, czyli znana wysokosc Blum D -- to potwierdza sposob odczytu. UWAGA NA SEMANTYKE: Blum nazywa to 'Platzbedarf im Korpus', czyli miejsce potrzebne w korpusie. Liczby GTV w tym samym polu sa o ~16 mm wieksze przy tej samej wysokosci tylu (84 -> 115 u GTV, 98,5 u Bluma) i nie jest pewne, czy opisuja to samo -- do sprawdzenia przy okazji ponownego czytania karty GTV. POLE nominal_mm: Blum oznacza wysokosci litera, nie milimetrem, wiec nominalu w sensie GTV ('szuflada 120') tu nie ma -- nominal_mm = real_mm. Zargenhohe z s.11 (M 83,6 / K 115,6) to wysokosc PROFILU BOKU i siedzi w osobnym zarge_height_mm; bywa o 0,4 mm nizsza od formatki tylu, wiec uzyta jako nominal kazalaby uznac formatke za wyzsza od produktu. Klasy C i D powstaja z profilu M lub K plus reling, wiec wlasnej Zargenhohe nie maja.",
     "slide_screw_x_front_mm": 37.0,
     "slide_screw_spacing_mm": 224.0,
     "shelf_pin_x_offset_mm": 37.0,
@@ -228,10 +267,12 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 50.0,
     "drilling_verified": false,
-    "drilling_source": "Karty Blum (MA-513/2ML s.4 'Befestigung der Korpusschienen | Cabinet profile screw positions' oraz katalog TANDEMBOX antaro s.60) sprawdzone 2026-08-30. WNIOSEK: Blum NIE PODAJE wspolrzednych wiercenia boku w milimetrach i nie da sie ich z tych kart wyprowadzic. Prowadnica korpusowa jest wlasnym szablonem: klada sie ja licem do czola boku i wkreca przez JEJ otwory, w miejscach zaznaczonych na rysunku symbolami, bez zadnego lancucha wymiarowego od krawedzi. Dwa rodzaje wkretow: A = wkret do plyty wiorowej 4x15 (bez nawiertu), B = wkret systemowy EURO art. 661.145. Liczba i rozmieszczenie zaleza od KLASY NOSNOSCI profilu (558/30 kg, 559/50 kg, TIP-ON 559T, 556/65 kg) oraz od NL, a czesc pozycji jest oznaczona gwiazdka jako opcjonalna ('gwarantuje optymalna stabilnosc'). Aplikacja nie modeluje ani klasy nosnosci, ani szablonu profilu. Stojace tu wczesniej slide_screw_x_front_mm=37 i slide_screw_spacing_mm=224 to LITERALY PRZENIESIONE Z GTV -- nie sa dana Bluma i nie odpowiadaja niczemu na profilu. Dlatego slide_screw_positions_known=false: rysunek boku nie pokazuje otworow prowadnicy dla tego systemu. Otwor wymyslony jest gorszy niz brak otworu -- stolarz wierci go i oslabia plyte w miejscu, ktore do niczego nie pasuje. Pola pozostaja w rekordzie, bo wymaga ich kontrakt hardware._DRAWER_FIELDS, ale nic ich juz nie czyta przy rysowaniu.",
+    "drilling_source": "Mocowanie frontu POTWIERDZONE katalogiem planowania 2026-09-02, blok 'Einbaumasse Front' (s.29 D, s.33 C, s.51 K, s.53 M, s.55 N): odsuw boczny 15,5 i pierwszy otwor 47,5 od dna swiatla -- te same bazy co GTV. Lancuchy roznia sie klasa: M dwa wkrety (47,5 | +32); K TRZY wkrety (47,5 | +32 | +64); C i D dwa wkrety plus otwor O10 +0,2/-0,1 pod tuleje relingu, odpowiednio 128 i 160 mm nad pierwszym otworem. Otwor O10 jest zapisany w sleeve_hole_offset_mm i NIE jest jeszcze rysowany -- tak samo jak w GTV MODERN BOX PRO. POPRAWIONE PRZY OKAZJI: fix_x_internal bylo 25 (karta: 15,5) i base_front_y 46 (karta: 47,5). Pierwsze mylilo sie o 9,5 mm na KAZDYM froncie szuflady Bluma. KLASA N SWIADOMIE POMINIETA w h_classes: jej pierwszy otwor lezy 32,5 mm od dna swiatla, a nie 47,5 (s.55). base_front_y jest polem SYSTEMU, nie klasy, wiec wpisanie N obok pozostalych dawaloby jej otwor 15 mm za wysoko. Model nie ma dzis nadpisania per klasa; brak klasy jest uczciwszy niz klasa z blednym otworem. NADAL NIEPOTWIERDZONE: pozycje wkretow prowadnicy w boku (slide_screw_positions_known = false, montaz z szablonu profilu), shelf_pin_x_offset_mm i carcass_dowel_x_offset_mm (ustawienia aplikacji, nie dane Bluma).",
     "pricing_sku_prefix": "BLUM-TANDEMBOX",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
-    "slide_screw_positions_known": false
+    "slide_screw_positions_known": false,
+    "nl_depth_clearance_mm": 3.0,
+    "box_board_thickness_mm": 16.0
   },
   "gtv_axis_pro_18": {
     "id": "gtv_axis_pro_18",
