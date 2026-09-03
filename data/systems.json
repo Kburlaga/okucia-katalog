@@ -590,5 +590,117 @@
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Instrukcja ATM FUTURA EVO (PDF producenta). Modele PK-1800 H90, PK-1801 H122, PK-1802 H172, PK-1803 H203; NL 300-550; nosnosc 40 kg; 80 000 cykli; regulacja 3D. Naglowek 'Wymiary ciecia dla plyty 18mm' i grubosc 18 na rysunku dna i tylu - to jest wariant NA PLYTE 18, w odroznieniu od linii FUTURA (PK-16xx), ktora producent rozkraja z plyty 16. Wzory ciecia sa w OBU liniach identyczne (dno LW-75 na NL-24, tyl LW-87, wysokosci 84/116/167/199) - rozni sie grubosc plyty i minimalna wysokosc korpusu (125/157/207/239 zamiast 112/144/194/230).",
     "slide_screw_second_row_mm": 45.0
+  },
+  "gtv_kulkowa_h45": {
+    "id": "gtv_kulkowa_h45",
+    "name": "GTV kulkowa H45 (szuflada z płyty)",
+    "type": "drawer",
+    "konstrukcja": "plyta",
+    "box_board_thickness_mm": 18.0,
+    "slide_thickness_per_side_mm": 12.7,
+    "slide_profile_height_mm": 44.5,
+    "available_nl_mm": [
+      200,
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      550,
+      600,
+      650,
+      700,
+      750
+    ],
+    "cut_bottom_width_reduction": 25.4,
+    "cut_bottom_depth_reduction": 0.0,
+    "cut_back_width_reduction": 25.4,
+    "nl_depth_clearance_mm": 0.0,
+    "slide_screw_positions_known": true,
+    "slide_screw_x_front_mm": 37.0,
+    "slide_screw_spacing_by_nl": {
+      "200": [
+        64
+      ],
+      "250": [
+        64,
+        160
+      ],
+      "300": [
+        64,
+        224
+      ],
+      "350": [
+        64,
+        224
+      ],
+      "400": [
+        64,
+        224,
+        320
+      ],
+      "450": [
+        64,
+        224,
+        352
+      ],
+      "500": [
+        64,
+        224,
+        352
+      ],
+      "550": [
+        64,
+        224,
+        352,
+        448
+      ],
+      "600": [
+        64,
+        224,
+        352,
+        448
+      ],
+      "650": [
+        64,
+        224,
+        352,
+        544
+      ],
+      "700": [
+        64,
+        224,
+        352,
+        480,
+        608
+      ],
+      "750": [
+        64,
+        224,
+        352,
+        512,
+        640
+      ]
+    },
+    "slide_screw_spacing_mm": 64.0,
+    "offset_prowadnica": 32.0,
+    "front_fix_offset_internal": 47.5,
+    "base_front_y": 47.5,
+    "fix_x_internal": 15.5,
+    "side_thickness_mm": 18.0,
+    "rail_required_above_front_mm": null,
+    "h_classes": null,
+    "synchro_rod_cut_formula": null,
+    "load_capacity_kg": 50.0,
+    "shelf_pin_x_offset_mm": 50.0,
+    "carcass_dowel_x_offset_mm": 20.0,
+    "front_fix_second_hole_dy_mm": 64.0,
+    "front_fix_second_hole_min_h_mm": 180.0,
+    "drilling_verified": true,
+    "pricing_sku_prefix": "PK-PRO-H45",
+    "pricing_sku_source": "SKU producenta GTV: PK-PRO-H45-<NL>.",
+    "source": "Szuflada BUDOWANA Z PLYTY na prowadnicach kulkowych GTV H45 PRO. Skladana z pieciu formatek, nie z gotowej skrzynki. Zrodla sa dwa i celowo rozdzielone. Z KARTY GTV (Furniture Accessories 2025, PDF s.148): grubosc prowadnicy 12,7 mm na strone, wiec szerokosc skrzynki = swiatlo - 25,4; wysokosc profilu 44,5 mm, czyli dolna granica wysokosci boku; NL 200-750; nosnosc 50 kg; pozycje wkretow w boku szafki (SKU PK-PRO-H45-*). Z KSIAZKI Wasiaka (s.111, sposob skladania): boki laczy sie z przodem i tylem licujac je GORNA krawedzia, a dno przykreca od spodu wkretami 3,5 x 35 -- stad dno ma wymiar zewnetrznego obrysu skrzynki, bo lezy pod wszystkim. Wybor potwierdzony praktyka: dno 16-18 mm ma wlasna sztywnosc i trzyma wkrety, wiec nie wymaga nuty (ta jest konieczna dopiero przy cienkim dnie z HDF lub sklejki). UWAGA -- CZEGO NIE MA W ZADNEJ KARCIE: glebokosc skrzynki przyjeta rowna NL, bo przy montazu BOCZNYM prowadnica biegnie wzdluz calego boku szuflady. GTV podaje tylko regule stabilnosci (szerokosc szuflady <= NL), a nie wzor na glebokosc. To jest przyjecie aplikacji, nie cytat. LICZB WASIAKA NIE MIESZAC Z TYMI: jego komoda stoi na prowadnicy DOLNEGO montazu (Blum TANDEM -- s.112 wprost), gdzie prowadnica nie zabiera szerokosci z bokow i dlatego wychodzi mu swiatlo - 13. Przy kulkowej bocznej 12,7 mm na strone taka szuflada nie weszlaby w korpus.",
+    "drilling_source": "Pozycje wkretow w boku szafki POTWIERDZONE karta GTV (PDF s.148), odczytane z wektorow -- szczegoly w rekordach SKU PK-PRO-H45-*. Dlatego slide_screw_positions_known = true, w odroznieniu od Bluma, ktory odsyla do wzornika."
   }
 }
