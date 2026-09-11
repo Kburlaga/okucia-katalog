@@ -9,7 +9,11 @@
       "verified": false,
       "drilling_verified": false,
       "source": "Stan zastany aplikacji: dotychczasowe wiercenia korpusu (drilling.ROLA_KONFIRMAT) opisane jako pozycja katalogowa. Wymiary standardowe, NIEZWERYFIKOWANE karta producenta.",
-      "not_applicable": ["cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm"],
+      "not_applicable": [
+        "cam_diameter_mm",
+        "cam_depth_mm",
+        "cam_axis_from_edge_mm"
+      ],
       "not_applicable_reason": "Konfirmat wkreca sie wprost przez plaszczyzne w czolo drugiej plyty — nie ma bebenka.",
       "fastener_type": "confirmat",
       "unit": "szt",
@@ -61,7 +65,12 @@
       "verified": false,
       "drilling_verified": false,
       "source": "Standard rynkowy wkreta do plyty meblowej z wiertlem na koncu. NIEZWERYFIKOWANE karta producenta.",
-      "not_applicable": ["cam_diameter_mm", "cam_depth_mm", "cam_axis_from_edge_mm", "dowel_sku"],
+      "not_applicable": [
+        "cam_diameter_mm",
+        "cam_depth_mm",
+        "cam_axis_from_edge_mm",
+        "dowel_sku"
+      ],
       "not_applicable_reason": "Wkret samowiercacy nie ma bebenka, a laczenia nie ustala sie kolkami — wkret wchodzi wprost w czolo.",
       "fastener_type": "self_drilling_screw",
       "unit": "szt",
@@ -76,6 +85,42 @@
       "dowel_sku": null,
       "rozbieralne": false,
       "description_pl": "Wkrecany bez nawiercania — zerowe srednice otworow sa dana, nie brakiem. Punkty i tak trzeba wytrasowac, zeby wkret trafil w srodek czola."
+    }
+  },
+  {
+    "sku": "ZLACZE-KIESZENIOWE",
+    "category": "carcass_fastener",
+    "name": "Wkret do zlacza kieszeniowego 4x32 (gruboskrzynny)",
+    "system_id": null,
+    "price": 0.22,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Standard rynkowy zlacza kieszeniowego (typ Kreg) dla plyty 18 mm: wiertlo stopniowe 9,5 mm, kat 15 stopni, wkret gruboskrzynny 32 mm. pocket_entry_from_edge_mm NIE jest wziete z karty, tylko wyliczone z kata: wylot ma trafic w polowe grubosci plyty, czyli 9 mm ponizej lica, wiec os wejscia lezy 9/tan(15) = 33,6 mm od czola. NIEZWERYFIKOWANE karta producenta ani szablonem.",
+      "not_applicable": [
+        "cam_diameter_mm",
+        "cam_depth_mm",
+        "cam_axis_from_edge_mm",
+        "dowel_sku"
+      ],
+      "not_applicable_reason": "Zlacze kieszeniowe nie ma bebenka ani kolkow ustalajacych — wkret wchodzi skosnie z lica jednej plyty w czolo drugiej.",
+      "fastener_type": "pocket_hole",
+      "unit": "szt",
+      "length_mm": 32,
+      "face_hole_diameter_mm": 9.5,
+      "edge_hole_diameter_mm": 0,
+      "edge_hole_depth_mm": 0,
+      "cam_diameter_mm": null,
+      "cam_depth_mm": null,
+      "cam_axis_from_edge_mm": null,
+      "pocket_angle_deg": 15,
+      "pocket_entry_from_edge_mm": 34,
+      "pocket_from_end_mm": 60,
+      "pocket_spacing_max_mm": 200,
+      "uses_dowels": false,
+      "dowel_sku": null,
+      "rozbieralne": false,
+      "description_pl": "Kieszen wierci sie w plycie, ktora dochodzi CZOLEM, na jej niewidocznym licu. Wkret wychodzi z czola i wchodzi w plaszczyzne drugiej plyty. Na zewnatrz nie widac nic — i to jest caly powod stosowania tego zlacza. UWAGA: os wejscia (~34 mm od czola) lezy w tym samym pasie co pierwszy rzad wkretow prowadnicy szuflady (32-37 mm od dna swiatla). Dlatego kieszen nadaje sie do wienca dochodzacego do boku, a nie do plyty, ktora niesie prowadnice. Nie jest rozbieralne: wkret plus klej."
     }
   }
 ]
