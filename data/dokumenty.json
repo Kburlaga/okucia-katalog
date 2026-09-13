@@ -1,0 +1,150 @@
+{
+  "gtv-axis-pro-16": {
+    "id": "gtv-axis-pro-16",
+    "tytul": "AXIS PRO — instrukcja montażu (skrzynka 16 mm)",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/axis-pro-16-instrukcja.pdf",
+    "stron": 2,
+    "strona": 1,
+    "dotyczy": {"systemy": ["gtv_axis_pro"]}
+  },
+  "gtv-axis-pro-18": {
+    "id": "gtv-axis-pro-18",
+    "tytul": "AXIS PRO 18 — instrukcja montażu",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/axis-pro-18-instrukcja.pdf",
+    "stron": 11,
+    "strona": 7,
+    "strony": {"wymiary_montazowe": 5, "montaz": 7, "wymiary_formatek": 6},
+    "dotyczy": {"systemy": ["gtv_axis_pro_18"]}
+  },
+  "gtv-modern-box-pro": {
+    "id": "gtv-modern-box-pro",
+    "tytul": "MODERN BOX PRO — instrukcja montażu (450454)",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/modern-box-pro-instrukcja.pdf",
+    "stron": 10,
+    "strona": 10,
+    "strony": {"wymiary_montazowe": 6, "wymiary_formatek": 7, "montaz": 10, "regulacja": 9},
+    "dotyczy": {"systemy": ["gtv_modern_box_pro"]}
+  },
+  "blum-tandembox-antaro-montaz": {
+    "id": "blum-tandembox-antaro-montaz",
+    "tytul": "TANDEMBOX antaro — montaż (MA-513)",
+    "producent": "Blum",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "blum/tandembox-antaro-montaz.pdf",
+    "stron": 8,
+    "strona": 5,
+    "strony": {"wymiary_montazowe": 2, "wymiary_formatek": 3, "montaz": 5, "regulacja": 7},
+    "dotyczy": {"systemy": ["blum_antaro"]}
+  },
+  "blum-tandembox-antaro-planowanie": {
+    "id": "blum-tandembox-antaro-planowanie",
+    "tytul": "TANDEMBOX antaro — katalog planowania",
+    "producent": "Blum",
+    "rodzaj": "katalog",
+    "jezyk": "pl",
+    "plik": "blum/tandembox-antaro-planowanie.pdf",
+    "stron": 74,
+    "strona": 11,
+    "strony": {"wysokosci_scianek": 11},
+    "dotyczy": {"systemy": ["blum_antaro"]}
+  },
+  "atm-futura-katalog": {
+    "id": "atm-futura-katalog",
+    "tytul": "FUTURA — katalog systemu",
+    "producent": "ATM",
+    "rodzaj": "katalog",
+    "jezyk": "pl",
+    "plik": "atm/futura-katalog.pdf",
+    "stron": 11,
+    "strona": 4,
+    "strony": {"wymiary_formatek": 4},
+    "dotyczy": {"systemy": ["atm_futura"]}
+  },
+  "atm-futura-evo": {
+    "id": "atm-futura-evo",
+    "tytul": "FUTURA EVO — instrukcja",
+    "producent": "ATM",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "atm/futura-evo-instrukcja.pdf",
+    "stron": 4,
+    "strona": 1,
+    "dotyczy": {"systemy": ["atm_futura_evo"]}
+  },
+  "gtv-prestige-zawias": {
+    "id": "gtv-prestige-zawias",
+    "tytul": "PRESTIGE — zawias puszkowy, instrukcja",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/prestige-zawias-instrukcja.pdf",
+    "stron": 2,
+    "strona": 1,
+    "dotyczy": {"systemy_zawiasow": ["gtv_prestige"], "sku": ["ZAW-CLIP110"]}
+  },
+  "gtv-zawias-165": {
+    "id": "gtv-zawias-165",
+    "tytul": "Zawias kątowy 165° — instrukcja",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/zawias-165-instrukcja.pdf",
+    "stron": 2,
+    "strona": 1,
+    "dotyczy": {"systemy_zawiasow": ["gtv_kat_165"], "sku": ["ZAW-NAROZNY-45"]}
+  },
+  "gtv-zk-force-kpl": {
+    "id": "gtv-zk-force-kpl",
+    "tytul": "ZK-FORCE — zawieszka, karta produktowa",
+    "producent": "GTV",
+    "rodzaj": "karta_produktowa",
+    "jezyk": "pl",
+    "plik": "gtv/zk-force-kpl-karta.pdf",
+    "stron": 1,
+    "strona": 1,
+    "dotyczy": {"sku": ["ZK-FORCE-KPL"]}
+  },
+  "gtv-zk-r1-kpl-10": {
+    "id": "gtv-zk-r1-kpl-10",
+    "tytul": "ZK-R1 — zawieszka, karta produktowa",
+    "producent": "GTV",
+    "rodzaj": "karta_produktowa",
+    "jezyk": "pl",
+    "plik": "gtv/zk-r1-kpl-10-karta.pdf",
+    "stron": 1,
+    "strona": 1,
+    "dotyczy": {"sku": ["ZK-R1-KPL-10"]}
+  },
+  "gtv-zk-zaw-r0-10": {
+    "id": "gtv-zk-zaw-r0-10",
+    "tytul": "ZK-ZAW-R0 — zawieszka, karta produktowa",
+    "producent": "GTV",
+    "rodzaj": "karta_produktowa",
+    "jezyk": "pl",
+    "plik": "gtv/zk-zaw-r0-10-karta.pdf",
+    "stron": 1,
+    "strona": 1,
+    "dotyczy": {"sku": ["ZK-ZAW-R0-10"]}
+  },
+  "gtv-kk-w80800": {
+    "id": "gtv-kk-w80800",
+    "tytul": "W80800 — kratka wentylacyjna, karta produktowa",
+    "producent": "GTV",
+    "rodzaj": "karta_produktowa",
+    "jezyk": "pl",
+    "plik": "gtv/kk-w80800-karta.pdf",
+    "stron": 1,
+    "strona": 1,
+    "dotyczy": {"sku": ["KK-W80800-D0", "KK-W80800-D1", "KK-W80800-D2", "KK-W80800-24", "KK-W80800-06", "KK-W80800-21", "KK-W80800-23"]}
+  }
+}

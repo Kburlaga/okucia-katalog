@@ -69,13 +69,28 @@ def main() -> int:
         print(f"\nNIEZWERYFIKOWANE Z KARTAMI PRODUCENTA ({len(r['unverified'])}):")
         print("  " + ", ".join(r["unverified"]))
 
+    d = schema.validate_dokumenty()
+    print("")
+    print(f"DOKUMENTY PRODUCENTÓW: {d['total']}")
+    if d["problemy"]:
+        for doc_id, braki in sorted(d["problemy"].items()):
+            print(f"  {doc_id}")
+            for b in braki:
+                print(f"      {b}")
+    if d["osierocone_pliki"]:
+        print("  PLIKI BEZ WPISU W REJESTRZE (nikt ich nie zobaczy):")
+        for f in d["osierocone_pliki"]:
+            print(f"      {f}")
+    if d["ok"]:
+        print("  OK: rejestr i pliki opisują to samo.")
+
     if r["ok"]:
         print("\nOK: wszystkie pozycje i systemy mają komplet pól wymaganych.")
     else:
         n = len(r["items_with_problems"]) + len(r["systems_with_problems"])
         print(f"\nBRAKI: {n} wpisów wymaga uzupełnienia.")
 
-    return 1 if (args.strict and not r["ok"]) else 0
+    return 1 if (args.strict and not (r["ok"] and d["ok"])) else 0
 
 
 if __name__ == "__main__":

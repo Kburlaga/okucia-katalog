@@ -277,3 +277,73 @@ def validate_catalog(items=None, systems=None, hinge_systems=None) -> dict:
         "unverified": unverified,
         "ok": not item_problems and not system_problems,
     }
+
+
+# --------------------------------------------------------------------------
+# DOKUMENTY PRODUCENTÓW
+# --------------------------------------------------------------------------
+
+DOKUMENT_REQUIRED = ("id", "tytul", "producent", "rodzaj", "plik", "dotyczy")
+
+
+def validate_dokumenty() -> dict:
+    """Czy rejestr dokumentów i katalog plików opisują to samo.
+
+    Rejestr i pliki rozjeżdżają się w obie strony i obie bolą inaczej:
+    wpis bez pliku daje w aplikacji martwy link, a plik bez wpisu jest
+    niewidoczny dla użytkownika i po roku nikt nie wie, czemu tam leży.
+    Sprawdzamy więc obie strony, a osobno to, czy dokument w ogóle ma do
+    czego przylegać — dokument przypisany do nieistniejącego systemu albo
+    SKU jest cichym brakiem, nie błędem składni.
+    """
+    import glob as _glob
+    import os as _os
+
+    from okucia import loader
+
+    docs = loader.load_dokumenty()
+    systemy = set(loader.load_systems())
+    zawiasy = set(loader.load_hinge_systems())
+    skus = {it.get("sku") for it in loader.load_items()}
+
+    problemy, uzyte = {}, set()
+    for doc_id, doc in docs.items():
+        braki = []
+        for pole in DOKUMENT_REQUIRED:
+            if not doc.get(pole):
+                braki.append(f"brak `{pole}`")
+        if doc.get("id") != doc_id:
+            braki.append(f"`id` ({doc.get('id')!r}) != klucz ({doc_id!r})")
+        plik = doc.get("plik")
+        if plik:
+            uzyte.add(plik)
+            if loader.sciezka_dokumentu(doc_id) is None:
+                braki.append(f"pliku {plik!r} nie ma na dysku")
+        dot = doc.get("dotyczy") or {}
+        if not any(dot.get(k) for k in ("systemy", "systemy_zawiasow",
+                                        "sku", "kategorie")):
+            braki.append("`dotyczy` nie wskazuje ani systemu, ani SKU")
+        for s in (dot.get("systemy") or []):
+            if s not in systemy:
+                braki.append(f"nieznany system {s!r}")
+        for s in (dot.get("systemy_zawiasow") or []):
+            if s not in zawiasy:
+                braki.append(f"nieznany system zawiasów {s!r}")
+        for s in (dot.get("sku") or []):
+            if s not in skus:
+                braki.append(f"nieznane SKU {s!r}")
+        if braki:
+            problemy[doc_id] = braki
+
+    na_dysku = {
+        _os.path.relpath(p, loader.DOKUMENTY_DIR).replace(_os.sep, "/")
+        for p in _glob.glob(_os.path.join(loader.DOKUMENTY_DIR, "**", "*"),
+                            recursive=True)
+        if _os.path.isfile(p)
+    }
+    return {
+        "total": len(docs),
+        "problemy": problemy,
+        "osierocone_pliki": sorted(na_dysku - uzyte),
+        "ok": not problemy and not (na_dysku - uzyte),
+    }

@@ -82,3 +82,68 @@ def resolve_system_id(name_or_id):
         return name_or_id
     found = get_drawer_system_by_name(name_or_id)
     return found["id"] if found else None
+
+
+# --------------------------------------------------------------------------
+# DOKUMENTY PRODUCENTÓW
+# --------------------------------------------------------------------------
+#
+# Katalog trzymał dotąd WARTOŚCI wyjęte z kart producenta (`source_pdf`,
+# `source_page`) i nie trzymał samych kart. Liczba bez dokumentu jest nie do
+# sprawdzenia, a stolarz przy maszynie i tak potrzebuje rysunku montażowego,
+# a nie tabelki — stąd `dokumenty/` obok `data/`.
+#
+# Dokument należy do SYSTEMU albo do SKU, nigdy do pojedynczej pozycji „na
+# wszelki wypadek": 293 pozycje AXIS PRO dzielą jedną instrukcję, bo montuje
+# się je identycznie. Przypisanie per SKU byłoby 293 kopiami tej samej prawdy.
+
+DOKUMENTY_DIR = os.path.join(os.path.dirname(_HERE), "dokumenty")
+
+
+@lru_cache(maxsize=1)
+def load_dokumenty():
+    """Rejestr dokumentów producentów: {id: {...}}. Brak pliku = pusty."""
+    path = os.path.join(DATA_DIR, "dokumenty.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def sciezka_dokumentu(doc_id):
+    """Pełna ścieżka pliku dokumentu. `None`, gdy nie ma go na dysku.
+
+    Rejestr i pliki mogą się rozjechać (ktoś doda wpis, zapomni pliku), więc
+    pytanie „czy jest" ma jedną odpowiedź, a nie dwie sprzeczne.
+    """
+    doc = load_dokumenty().get(doc_id)
+    if not doc:
+        return None
+    sciezka = os.path.join(DOKUMENTY_DIR, doc["plik"].replace("/", os.sep))
+    return sciezka if os.path.exists(sciezka) else None
+
+
+def dokumenty_dla(sku=None, system_id=None, hinge_system_id=None):
+    """Dokumenty pasujące do pozycji katalogu albo do systemu.
+
+    Kolejność wyniku jest znacząca: najpierw to, co opisuje DOKŁADNIE tę
+    pozycję (dopasowanie po SKU), potem dokumenty całego systemu. Instrukcja
+    zawieszki ma być pierwsza, gdy pytamy o zawieszkę, nawet jeśli mebel ma
+    też szuflady.
+    """
+    if sku is not None and system_id is None:
+        it = get_item(sku)
+        if it:
+            system_id = it.get("system_id")
+
+    po_sku, po_systemie = [], []
+    for doc in load_dokumenty().values():
+        dot = doc.get("dotyczy") or {}
+        if sku is not None and sku in (dot.get("sku") or []):
+            po_sku.append(doc)
+        elif system_id is not None and system_id in (dot.get("systemy") or []):
+            po_systemie.append(doc)
+        elif (hinge_system_id is not None
+              and hinge_system_id in (dot.get("systemy_zawiasow") or [])):
+            po_systemie.append(doc)
+    return po_sku + po_systemie

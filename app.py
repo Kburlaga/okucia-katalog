@@ -7,6 +7,7 @@ Read-only — brak zapisu, brak logowania (zasób wewnętrzny w sieci lokalnej).
 
 Uruchomienie lokalne:  uvicorn app:app --reload --port 8000
 """
+import os
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Query
@@ -78,3 +79,34 @@ def compute_drawer(
                                             h_class=h_class, front_height_mm=front_h)
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+
+@app.get("/dokumenty")
+def dokumenty(sku: Optional[str] = Query(None),
+              system_id: Optional[str] = Query(None),
+              hinge_system_id: Optional[str] = Query(None)):
+    """Instrukcje producenta. Bez filtru — cały rejestr.
+
+    Katalog trzymał dotąd WARTOŚCI wyjęte z kart producenta i nie trzymał
+    samych kart. Stolarz przy maszynie potrzebuje rysunku montażowego,
+    a nie tabelki, więc karty jadą razem z danymi.
+    """
+    if sku or system_id or hinge_system_id:
+        return loader.dokumenty_dla(sku=sku, system_id=system_id,
+                                    hinge_system_id=hinge_system_id)
+    return list(loader.load_dokumenty().values())
+
+
+@app.get("/dokumenty/{doc_id}/plik")
+def dokument_plik(doc_id: str):
+    """Sam plik PDF. 404 z powodem, gdy rejestr wskazuje na nieistniejący."""
+    from fastapi.responses import FileResponse
+
+    sciezka = loader.sciezka_dokumentu(doc_id)
+    if sciezka is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Nie ma dokumentu {doc_id!r} albo jego pliku brakuje "
+                   f"w katalogu okuć.")
+    return FileResponse(sciezka, media_type="application/pdf",
+                        filename=os.path.basename(sciezka))

@@ -13,6 +13,8 @@ okucia/         czysty Python (tylko stdlib), bez web/DB
 data/
   systems.json  parametry systemów (redukcje cięcia, offsety, klasy H, NL)
   items/        katalog SKU (kopie z kalkulatora — patrz sync)
+  dokumenty.json  rejestr instrukcji producenta: co opisuje który plik
+dokumenty/      SAME instrukcje (PDF), ułożone wg producenta
 tools/
   sync_from_kalkulator.py   odświeża data/items/ z Kalkulator_Stolarski_3
 ```
@@ -47,9 +49,32 @@ Endpointy:
 - `GET /systems` , `GET /systems/{id}`
 - `GET /items?category=&system_id=` , `GET /items/{sku}` , `GET /items/{sku}/related`
 - `GET /compute/drawer?lw=&depth=&system_id=&h_class=&front_h=` (zamiast `depth` można podać `nl`)
+- `GET /dokumenty?sku=&system_id=&hinge_system_id=` , `GET /dokumenty/{id}/plik`
 
 Lokalnie: `uvicorn app:app --reload --port 8000`
 Serwer: `docker compose up --build -d` (deploy automatyczny przez `.github/workflows/deploy.yml`).
+
+## Dokumenty producentów
+
+Katalog trzymał dotąd WARTOŚCI wyjęte z kart producenta (`specs.source_pdf`,
+`specs.source_page`) i nie trzymał samych kart. Liczba bez dokumentu jest nie
+do sprawdzenia, a stolarz przy maszynie i tak potrzebuje rysunku montażowego,
+a nie tabelki.
+
+**Dokument należy do SYSTEMU albo do SKU, nigdy do pojedynczej pozycji „na
+wszelki wypadek".** 293 pozycje AXIS PRO dzielą jedną instrukcję, bo montuje
+się je identycznie; przypisanie per SKU byłoby 293 kopiami tej samej prawdy.
+
+`data/dokumenty.json` niesie też `strony` — nazwane numery stron („montaż",
+„wymiary montażowe"). Dzięki temu link otwiera kartę NA WŁAŚCIWEJ STRONIE,
+a nie na okładce dokumentu, który ma ich siedemdziesiąt cztery.
+
+`specs.source_pdf` zostaje i znaczy co innego: to dowód pochodzenia LICZBY
+(z którego pliku i której strony ją przepisano), a nie instrukcja montażu.
+Dwie różne rzeczy, dwa różne pola.
+
+Walidator sprawdza obie strony rozjazdu: wpis bez pliku (martwy link
+w aplikacji) i plik bez wpisu (nikt go nie zobaczy).
 
 ## Walidacja kompletności
 
