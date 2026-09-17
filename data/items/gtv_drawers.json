@@ -11765,5 +11765,229 @@
       ],
       "compatible_h_class": null
     }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW250-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 250mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 250,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW300-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 300mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 300,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW350-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 350mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 350,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW400-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 400mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 400,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW450-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 450mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 450,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW500-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 500mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 500,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW550-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 550mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 550,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
+  },
+  {
+    "sku": "PB-AXISPRO-RELKW600-3",
+    "category": "rail",
+    "name": "Reling wzdłużny 600mm szary",
+    "system_id": "gtv_axis_pro_18",
+    "price": 0.0,
+    "specs": {
+      "manufacturer": "GTV",
+      "subsystem": "axis_pro_18",
+      "name_pl": "Reling wzdłużny",
+      "name_en": "Longitudinal drawer rail",
+      "color_pl": "szary",
+      "color_en": "gray",
+      "material_pl": null,
+      "material_en": null,
+      "internal_kind": "longitudinal_rail",
+      "optional_extra": false,
+      "source_pdf": "axis-pro-18-instrukcja.pdf",
+      "source_page": 6,
+      "length_mm": 600,
+      "cross_section": "square",
+      "diameter_or_side_mm": null,
+      "compatible_systems": [
+        "gtv_axis_pro_18"
+      ],
+      "compatible_h_class": null
+    }
   }
 ]
