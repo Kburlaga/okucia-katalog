@@ -146,5 +146,17 @@
     "stron": 1,
     "strona": 1,
     "dotyczy": {"sku": ["KK-W80800-D0", "KK-W80800-D1", "KK-W80800-D2", "KK-W80800-24", "KK-W80800-06", "KK-W80800-21", "KK-W80800-23"]}
+  },
+  "gtv-movixpro-corner-wmc450": {
+    "id": "gtv-movixpro-corner-wmc450",
+    "tytul": "CORNER MOVIXPRO 450 — instrukcja montażu (2024.11.14)",
+    "producent": "GTV",
+    "rodzaj": "instrukcja_montazu",
+    "jezyk": "pl",
+    "plik": "gtv/movixpro-corner-wmc450-instrukcja.pdf",
+    "stron": 8,
+    "strona": 2,
+    "strony": {"montaz_i_wymiary_szafki": 2, "obciazenie_polek": 7, "wymiary_produktu": 8},
+    "dotyczy": {"sku": ["KO-WMC450-60", "KO-WMC450-01", "KO-WMC450-01B"]}
   }
 }
