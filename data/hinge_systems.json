@@ -64,6 +64,7 @@
   "blum_clip_top_half": {
     "id": "blum_clip_top_half",
     "name": "Blum Clip Top 110° półnakładany",
+    "price_sku": "BLUM-71B3650",
     "type": "hinge",
     "puszka_offset": 23.0,
     "hinge_y_inset_mm": 100.0,
