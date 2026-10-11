@@ -2,13 +2,13 @@
   {
     "sku": "KONFIRMAT",
     "category": "carcass_fastener",
-    "name": "Konfirmat 5x50mm",
+    "name": "Konfirmat 7x50mm",
     "system_id": null,
     "price": 0.25,
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Stan zastany aplikacji: dotychczasowe wiercenia korpusu (drilling.ROLA_KONFIRMAT) opisane jako pozycja katalogowa. Wymiary standardowe, NIEZWERYFIKOWANE karta producenta.",
+      "source": "Stan zastany aplikacji: dotychczasowe wiercenia korpusu (drilling.ROLA_KONFIRMAT) opisane jako pozycja katalogowa. Wymiary standardowe, NIEZWERYFIKOWANE karta producenta. 2026-10-11: nazwa poprawiona z '5x50' na '7x50' — otwory (lico fi7, czolo fi5x40) od poczatku byly pod 7x50 (wiertlo stopniowe: 5 mm gwint, pogłebienie pod leb).",
       "not_applicable": [
         "cam_diameter_mm",
         "cam_depth_mm",
@@ -31,6 +31,37 @@
     }
   },
   {
+    "sku": "KONFIRMAT-5X50",
+    "category": "carcass_fastener",
+    "name": "Konfirmat 5x50mm",
+    "system_id": null,
+    "price": 0.25,
+    "specs": {
+      "verified": false,
+      "drilling_verified": false,
+      "source": "Druga opcja konfirmatu (uzytkownik 2026-10-11: zostawic 5x50 i 7x50 do wyboru, domyslnie 7x50). Lico fi5, czolo fi3,5 (wiertlo z fazownikiem 5 mm ma pilot 3,5 — Wolfcraft 2500000), glebokosc w czole jak 7x50. Cena SKOPIOWANA z 7x50 — do uzupelnienia. NIEZWERYFIKOWANE karta.",
+      "not_applicable": [
+        "cam_diameter_mm",
+        "cam_depth_mm",
+        "cam_axis_from_edge_mm"
+      ],
+      "not_applicable_reason": "Konfirmat wkreca sie wprost przez plaszczyzne w czolo drugiej plyty — nie ma bebenka.",
+      "fastener_type": "confirmat",
+      "unit": "szt",
+      "length_mm": 50,
+      "face_hole_diameter_mm": 5,
+      "edge_hole_diameter_mm": 3.5,
+      "edge_hole_depth_mm": 40,
+      "cam_diameter_mm": null,
+      "cam_depth_mm": null,
+      "cam_axis_from_edge_mm": null,
+      "uses_dowels": true,
+      "dowel_sku": "KOLEK-8X30",
+      "rozbieralne": false,
+      "description_pl": "Domyslne zlacze aplikacji. Skrecane na stale, widoczny leb od strony plaszczyzny."
+    }
+  },
+  {
     "sku": "MIMOSROD-15",
     "category": "carcass_fastener",
     "name": "Mimosrod 15 mm + trzpien (zlacze rozbieralne)",
@@ -39,13 +70,13 @@
     "specs": {
       "verified": false,
       "drilling_verified": false,
-      "source": "Standard rynkowy zlacza mimosrodowego (bebenek fi15, trzpien 34 mm). Wartosci NIEZWERYFIKOWANE karta producenta — sprawdz przed wierceniem. face_hole_diameter_mm to gniazdo TRZPIENIA w licu plyty kryjacej (fi8); bebenek opisuja pola cam_* i jest w drugiej plycie zlacza.",
+      "source": "Standard rynkowy zlacza mimosrodowego (bebenek fi15, trzpien 34 mm). Wartosci NIEZWERYFIKOWANE karta producenta — sprawdz przed wierceniem. edge_hole_depth_mm = kolek 8x30 w czole: 20 (lico 11, razem 31 > 30 — decyzja uzytkownika 2026-10-11 „w czole wiecej, w licu mniej”; wczesniej 12+12=24 nie domykalo plyt). face_hole_diameter_mm to gniazdo TRZPIENIA w licu plyty kryjacej (fi8); bebenek opisuja pola cam_* i jest w drugiej plycie zlacza. 2026-10-11: trzpien WKRECANY w otwor fi5 (decyzja uzytkownika; Hafele Minifix 34 mm: trzpien do otworu 5 mm, gwint 11 mm — karta Wurth 262.28.928). Wczesniej fi8 = wariant rozporowy.",
       "fastener_type": "cam_lock",
       "unit": "kpl",
       "length_mm": 34,
-      "face_hole_diameter_mm": 8,
+      "face_hole_diameter_mm": 5,
       "edge_hole_diameter_mm": 8,
-      "edge_hole_depth_mm": 12,
+      "edge_hole_depth_mm": 20,
       "cam_diameter_mm": 15,
       "cam_depth_mm": 12.5,
       "cam_axis_from_edge_mm": 34,
