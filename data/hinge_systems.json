@@ -2,12 +2,13 @@
   "blum_clip_top": {
     "id": "blum_clip_top",
     "name": "Blum Clip Top",
+    "price_sku": "BLUM-71B3550",
     "type": "hinge",
     "puszka_offset": 22.5,
     "hinge_y_inset_mm": 100.0,
     "hinge_count_thresholds": [
       [
-        900,
+        915,
         2
       ],
       [
@@ -15,11 +16,11 @@
         3
       ],
       [
-        2000,
+        2057,
         4
       ],
       [
-        2400,
+        2540,
         5
       ],
       [
@@ -32,7 +33,7 @@
     "cup_screw_spacing_mm": 45.0,
     "cup_screw_offset_mm": 9.5,
     "verified": false,
-    "source": "Katalog i podrecznik Blum 2024/2025 (PL, 758 str.), sekcja 'Systemy zawiasow', strona PDF 81 = drukowana 77, blok 'Odleglosc puszki TB'. Przeczytana 2026-09-02. Z KARTY: zawias CLIP top 110 stopni, tabela wiaze NALOZENIE FRONTU FA z ODLEGLOSCIA PUSZKI TB przy dystansie prowadnika MD = 0: FA 14->TB 3, 15->4, 16->5, 17->6, 18->7. TB mierzy sie do BRZEGU puszki, wiec os wypada TB + 17,5 (polowa O35) -- kontrola: FA 16 daje os 22,5, czyli klasyczny wymiar Blum. Tabela ma tez wiersze MD 3/6/9, ktore przesuwaja te same TB na nizsze nalozenia (MD 9: FA 5-9); aplikacja nie modeluje dystansu prowadnika, wiec czyta wylacznie MD = 0. Nalozenia ponizej 14 przy MD = 0 NIE SA OSIAGALNE -- wymagaja grubszego prowadnika, tak samo jak przy GTV Prestige. NADAL NIE Z KARTY: plate_offset_mm (odsuw prowadnika od krawedzi korpusu) -- ZNALEZIONY 2026-09-03, ale NALEZY DO PROWADNIKA, NIE DO ZAWIASU. Sprawdzone: sekcja 'Prowadniki' (PDF s.151-159) podaje wylacznie wzor otworow SAMEGO prowadnika -- dwa wkrety co 32 mm, typ '20/32', plus tolerancje 10 +/-0,1 -- a nie jego polozenie na boku. Strony rozwiazan standardowych (PDF s.81) definiuja wymiar A tylko dla DRZWI WPUSZCZANYCH i to wzglednie: 'pozycje mocowania prowadnika cofnac o grubosc frontu + 1,5 mm'. Dla drzwi nakladanych liczby na tych stronach nie ma. Do sprawdzenia gdzie indziej: sekcja 'Montaz, demontaz i regulacja' (nadruk s.161) albo osobna instrukcja prowadnika. Dopoki go nie ma, rysunek boku bierze wartosc awaryjna 37 z systemu szuflad, co jest zgadywaniem -- i dlatego verified zostaje false, a uwaga 'zawias-niepotwierdzony' slusznie sie odzywa. hinge_y_inset_mm i hinge_count_thresholds to progi warsztatowe, zadna karta ich nie poda. USTALENIE: Blum nazywa prowadniki wzorem `odsuw/rozstaw` i podaje go rysunkiem -- widok boku (PDF s.155) ma prawa krawedz jako linie ciagla (czolo), wymiar 20 od czola do blizszego otworu i 32 miedzy otworami. ALE CLIP top wystepuje w TRZECH wzorach: 20/32 (6 pozycji), 28/32 (2) i 37/32 (14). Odsuw jest wiec cecha WYBRANEGO PROWADNIKA, a nie systemu zawiasow -- inny prowadnik przesuwa otwory w boku o kilkanascie mm. Wpisane 37, bo 37/32 jest w tym katalogu zdecydowanie najczestszy. UWAGA NA POZORNA ZGODNOSC: dotad rysunek boku bral awaryjne 37 z systemu SZUFLAD i wychodzilo dobrze -- ale przez zbieg okolicznosci, nie dlatego, ze ktos to sprawdzil. Teraz liczba ma zrodlo. verified ZOSTAJE false: model nie ma pola na wybor prowadnika, wiec uzytkownik montujacy 20/32 dostanie otwory 17 mm obok i nic go nie ostrzeze. PROWADNIKI JAKO BYT KATALOGOWY 2026-09-03: pole `plates` trzyma wszystkie trzy wzory z liczbami, a `plate_default` wskazuje ten, ktory aplikacja przyjmuje bez wyboru uzytkownika. Wczesniej istniala tylko jedna liczba i wybor innego prowadnika nie mial jak sie odbic na rysunku. PUSZKA NA WKRETY (2026-10-11, lista nawiertow CNC): cup_depth_mm z karty sprzedawcy; cup_screw_spacing_mm 45 i cup_screw_offset_mm 9,5 = wzor Blum 45/9,5 (opis szablonu Blum Ecodrill: 45 mm miedzy wkretami, 9,5 mm od osi puszki do osi wkretow, w glab frontu). Niezweryfikowane karta Blum.",
+    "source": "Katalog i podrecznik Blum 2024/2025 (PL, 758 str.), sekcja 'Systemy zawiasow', strona PDF 81 = drukowana 77, blok 'Odleglosc puszki TB'. Przeczytana 2026-09-02. Z KARTY: zawias CLIP top 110 stopni, tabela wiaze NALOZENIE FRONTU FA z ODLEGLOSCIA PUSZKI TB przy dystansie prowadnika MD = 0: FA 14->TB 3, 15->4, 16->5, 17->6, 18->7. TB mierzy sie do BRZEGU puszki, wiec os wypada TB + 17,5 (polowa O35) -- kontrola: FA 16 daje os 22,5, czyli klasyczny wymiar Blum. Tabela ma tez wiersze MD 3/6/9, ktore przesuwaja te same TB na nizsze nalozenia (MD 9: FA 5-9); aplikacja nie modeluje dystansu prowadnika, wiec czyta wylacznie MD = 0. Nalozenia ponizej 14 przy MD = 0 NIE SA OSIAGALNE -- wymagaja grubszego prowadnika, tak samo jak przy GTV Prestige. NADAL NIE Z KARTY: plate_offset_mm (odsuw prowadnika od krawedzi korpusu) -- ZNALEZIONY 2026-09-03, ale NALEZY DO PROWADNIKA, NIE DO ZAWIASU. Sprawdzone: sekcja 'Prowadniki' (PDF s.151-159) podaje wylacznie wzor otworow SAMEGO prowadnika -- dwa wkrety co 32 mm, typ '20/32', plus tolerancje 10 +/-0,1 -- a nie jego polozenie na boku. Strony rozwiazan standardowych (PDF s.81) definiuja wymiar A tylko dla DRZWI WPUSZCZANYCH i to wzglednie: 'pozycje mocowania prowadnika cofnac o grubosc frontu + 1,5 mm'. Dla drzwi nakladanych liczby na tych stronach nie ma. Do sprawdzenia gdzie indziej: sekcja 'Montaz, demontaz i regulacja' (nadruk s.161) albo osobna instrukcja prowadnika. Dopoki go nie ma, rysunek boku bierze wartosc awaryjna 37 z systemu szuflad, co jest zgadywaniem -- i dlatego verified zostaje false, a uwaga 'zawias-niepotwierdzony' slusznie sie odzywa. hinge_y_inset_mm i hinge_count_thresholds to progi warsztatowe, zadna karta ich nie poda. USTALENIE: Blum nazywa prowadniki wzorem `odsuw/rozstaw` i podaje go rysunkiem -- widok boku (PDF s.155) ma prawa krawedz jako linie ciagla (czolo), wymiar 20 od czola do blizszego otworu i 32 miedzy otworami. ALE CLIP top wystepuje w TRZECH wzorach: 20/32 (6 pozycji), 28/32 (2) i 37/32 (14). Odsuw jest wiec cecha WYBRANEGO PROWADNIKA, a nie systemu zawiasow -- inny prowadnik przesuwa otwory w boku o kilkanascie mm. Wpisane 37, bo 37/32 jest w tym katalogu zdecydowanie najczestszy. UWAGA NA POZORNA ZGODNOSC: dotad rysunek boku bral awaryjne 37 z systemu SZUFLAD i wychodzilo dobrze -- ale przez zbieg okolicznosci, nie dlatego, ze ktos to sprawdzil. Teraz liczba ma zrodlo. verified ZOSTAJE false: model nie ma pola na wybor prowadnika, wiec uzytkownik montujacy 20/32 dostanie otwory 17 mm obok i nic go nie ostrzeze. PROWADNIKI JAKO BYT KATALOGOWY 2026-09-03: pole `plates` trzyma wszystkie trzy wzory z liczbami, a `plate_default` wskazuje ten, ktory aplikacja przyjmuje bez wyboru uzytkownika. Wczesniej istniala tylko jedna liczba i wybor innego prowadnika nie mial jak sie odbic na rysunku. PUSZKA NA WKRETY (2026-10-11, lista nawiertow CNC): cup_depth_mm z karty sprzedawcy; cup_screw_spacing_mm 45 i cup_screw_offset_mm 9,5 = wzor Blum 45/9,5 (opis szablonu Blum Ecodrill: 45 mm miedzy wkretami, 9,5 mm od osi puszki do osi wkretow, w glab frontu). Niezweryfikowane karta Blum. PROGI LICZBY ZAWIASOW (2026-10-17): z wykresu Blum 'Hinges per door' (CLIP & Clip Top General specifications, wersja 12-2004, Richelieu sekcja 3A s.2): 2 zawiasy do ~36 cali (915), 3 do ~63 (1600), 4 do ~81 (2057), 5 do ~100 (2540); pasma ciezaru 15 / 15-30 / 30-45 / 45-60 lb (6,8 / 13,6 / 20,4 / 27,2 kg) - aplikacja liczy tylko z wysokosci; powyzej 2540 wykres nie siega, 6 to przyjecie. Odczyt z rysunku, nie z tabeli. MINDESTFUGE (2026-10-17): karta Blum TD-032/1DE CLIP top BLUMOTION 110 st., tabela 'Mindestfuge fur Turen mit angefasten Kanten (R = 1 mm) bei Werkseinstellung', wiersz TB 5; +2 mm regulacji bocznej dodaje wartosci z wiersza 'Zusatzlich'.",
     "cup_offsets_by_overlay_mm": {
       "14": 20.5,
       "15": 21.5,
@@ -59,7 +60,31 @@
         "opis": "prowadnik krzyżakowy — najczęstszy"
       }
     },
-    "plate_default": "37/32"
+    "plate_default": "37/32",
+    "min_gap_mm_by_door_thickness": {
+      "16": 0.5,
+      "18": 0.8,
+      "19": 0.9,
+      "20": 1.2,
+      "21": 1.4,
+      "22": 1.7,
+      "23": 2.0,
+      "24": 2.4,
+      "25": 2.9,
+      "26": 3.4
+    },
+    "min_gap_side_adjust_plus2_mm": {
+      "16": 0.2,
+      "18": 0.4,
+      "19": 0.4,
+      "20": 0.5,
+      "21": 0.5,
+      "22": 0.5,
+      "23": 0.5,
+      "24": 0.5,
+      "25": 0.5,
+      "26": 0.5
+    }
   },
   "blum_clip_top_half": {
     "id": "blum_clip_top_half",
