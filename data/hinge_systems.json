@@ -152,6 +152,7 @@
     "id": "gtv_prestige",
     "name": "GTV Prestige",
     "type": "hinge",
+    "price_sku": "ZAW-CLIP110",
     "puszka_offset": 22.0,
     "hinge_y_inset_mm": 100.0,
     "hinge_count_thresholds": [
