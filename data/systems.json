@@ -29,6 +29,10 @@
         "min_carcass_height_mm": 115,
         "front_fix_offsets_mm": [
           32.0
+        ],
+        "back_wall_fix_from_top_mm": [
+          19.0,
+          51.0
         ]
       },
       "B": {
@@ -37,6 +41,11 @@
         "min_carcass_height_mm": 147,
         "front_fix_offsets_mm": [
           32.0
+        ],
+        "back_wall_fix_from_top_mm": [
+          19.0,
+          51.0,
+          83.0
         ]
       },
       "C": {
@@ -47,6 +56,11 @@
           32.0,
           96.0,
           128.0
+        ],
+        "back_wall_fix_from_top_mm": [
+          10.0,
+          74.0,
+          138.0
         ]
       },
       "D": {
@@ -57,6 +71,11 @@
           32.0,
           96.0,
           128.0
+        ],
+        "back_wall_fix_from_top_mm": [
+          19.0,
+          83.0,
+          147.0
         ]
       }
     },
@@ -70,7 +89,7 @@
     "front_fix_second_hole_min_h_mm": 180.0,
     "carcass_dowel_x_offset_mm": 20.0,
     "drilling_verified": true,
-    "drilling_source": "Instrukcje AXIS PRO wariant 16 mm: montazni navod (CZ, 5 str.) i instrukcja A4 (PL, 2 str.), sprawdzone 2026-08-31. POTWIERDZONE WLASNA KARTA: pierwszy otwor prowadnicy 37 i rozstawy 128/192/224 dla NL 300-550 (CZ s.2), odsuw prowadnicy od dna swiatla 32, mocowanie frontu 15,5 i min. 47,5, wymiar 44 i 37,5 (CZ s.2 i s.3), minimalne wysokosci korpusu 115/147/198/230, wysokosci scianek 84/116/167/199 (tabela CZ s.3), rozkroj dno LW-75 x NL-24 i tyl LW-87 przy plycie 16 mm (PL s.2). LANCUCH MOCOWAN FRONTU IDENTYCZNY jak w wariancie 18: klasy A i B maja min 47,5 | 32, klasy C i D min 47,5 | 32 | 64 | 32 (CZ s.2 dla H=86 i 120, s.3 dla H=168 i 200). PRZENIESIONE Z KARTY WARIANTU 18, bo prowadnica i skrzynka sa te same, a wlasna karta tego nie obejmuje: rozstaw dla NL 250 (96) i NL 600 (224 + trzeci otwor 352) oraz prog relingu 284 mm — karty 16 mm wspominaja reling, ale progu nie podaja. NADAL NIE Z KARTY: shelf_pin_x_offset_mm (37) i carcass_dowel_x_offset_mm (50) to ustawienia aplikacji, nie dane GTV; side_thickness_mm (14) nie jest przez aplikacje czytane; synchro_rod_cut_formula (LW-127) nie wystepuje w tych kartach. DRUGI RZAD WKRETOW PROWADNICY: przekroj pokazuje dwa punkty, 32 i 44 mm od dna swiatla. Aplikacja rysuje tylko dolny. Wartosc zapisana w slide_screw_second_row_mm; czy gorny jest obowiazkowy, czy alternatywny, karta nie mowi slowami -- do rozstrzygniecia przymiarem. WARTOSCI WARSZTATOWE 2026-09-02: shelf_pin_x_offset_mm 37 -> 50 i carcass_dowel_x_offset_mm 50 -> 20, decyzja uzytkownika na podstawie poradnika Wasiaka (s.66 konfirmat ok. 20 mm od krawedzi, s.68 podporka 50 mm od przodu i tylu boku). To NIE sa dane producenta okuc -- siedza w rekordzie systemu tylko dlatego, ze wierci sie je w tym samym boku, i nadal zglasza je uwaga 'odsuwy-wlasne-aplikacji'.",
+    "drilling_source": "Instrukcje AXIS PRO wariant 16 mm: montazni navod (CZ, 5 str.) i instrukcja A4 (PL, 2 str.), sprawdzone 2026-08-31. POTWIERDZONE WLASNA KARTA: pierwszy otwor prowadnicy 37 i rozstawy 128/192/224 dla NL 300-550 (CZ s.2), odsuw prowadnicy od dna swiatla 32, mocowanie frontu 15,5 i min. 47,5, wymiar 44 i 37,5 (CZ s.2 i s.3), minimalne wysokosci korpusu 115/147/198/230, wysokosci scianek 84/116/167/199 (tabela CZ s.3), rozkroj dno LW-75 x NL-24 i tyl LW-87 przy plycie 16 mm (PL s.2). LANCUCH MOCOWAN FRONTU IDENTYCZNY jak w wariancie 18: klasy A i B maja min 47,5 | 32, klasy C i D min 47,5 | 32 | 64 | 32 (CZ s.2 dla H=86 i 120, s.3 dla H=168 i 200). PRZENIESIONE Z KARTY WARIANTU 18, bo prowadnica i skrzynka sa te same, a wlasna karta tego nie obejmuje: rozstaw dla NL 250 (96) i NL 600 (224 + trzeci otwor 352) oraz prog relingu 284 mm — karty 16 mm wspominaja reling, ale progu nie podaja. NADAL NIE Z KARTY: shelf_pin_x_offset_mm (37) i carcass_dowel_x_offset_mm (50) to ustawienia aplikacji, nie dane GTV; side_thickness_mm (14) nie jest przez aplikacje czytane; synchro_rod_cut_formula (LW-127) nie wystepuje w tych kartach. DRUGI RZAD WKRETOW PROWADNICY: przekroj pokazuje dwa punkty, 32 i 44 mm od dna swiatla. Aplikacja rysuje tylko dolny. Wartosc zapisana w slide_screw_second_row_mm; czy gorny jest obowiazkowy, czy alternatywny, karta nie mowi slowami -- do rozstrzygniecia przymiarem. WARTOSCI WARSZTATOWE 2026-09-02: shelf_pin_x_offset_mm 37 -> 50 i carcass_dowel_x_offset_mm 50 -> 20, decyzja uzytkownika na podstawie poradnika Wasiaka (s.66 konfirmat ok. 20 mm od krawedzi, s.68 podporka 50 mm od przodu i tylu boku). To NIE sa dane producenta okuc -- siedza w rekordzie systemu tylko dlatego, ze wierci sie je w tym samym boku, i nadal zglasza je uwaga 'odsuwy-wlasne-aplikacji'. MOCOWANIE SCIANKI TYLNEJ (2026-10-30, instrukcja PL A4 axis-pro-16-instrukcja.pdf s.1, 'Wymiary montazowe scianki tylnej'): otwory 9,5 mm od konca tylu (tyl konczy sie 43,5 = 87/2 od boku korpusu), w pionie od GORNEJ krawedzi tylu: niska 19 | 32, srednia 19 | 32 | 32, wysoka 10 | 64 | 64, bardzo wysoka 19 | 64 | 64 -- zapisane jako pozycje od gory (back_wall_fix_from_top_mm per klasa). Dna sie nie wierci: wchodzi w profile bokow (s.1 sklad zestawu, s.2 'Wymiary dna'). Minimalna glebokosc na tej karcie LT = NL + 5 (s.2); katalog trzyma 10 za karta wariantu 18 ('NL + 10', nadruk s.7) -- karty sie roznia, zostaje wartosc ostrozniejsza.",
     "pricing_sku_prefix": "GTV-PRO",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "slide_screw_spacing_by_nl": {
@@ -102,7 +121,8 @@
     },
     "box_board_thickness_mm": 16.0,
     "nl_depth_clearance_mm": 10.0,
-    "slide_screw_second_row_mm": 44.0
+    "slide_screw_second_row_mm": 44.0,
+    "back_wall_fix_from_end_mm": 9.5
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
