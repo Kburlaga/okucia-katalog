@@ -86,7 +86,7 @@
       "26": 0.5
     },
     "side_adjustment_mm": 2.0,
-    "side_adjustment_source": "Karta Blum TD-032/1DE CLIP top BLUMOTION 110: wiersz 'Zusatzlich' dla +2 mm regulacji bocznej; -2 przyjete symetrycznie."
+    "side_adjustment_source": "Karta Blum TD-032/1DE CLIP top BLUMOTION 110: wiersz 'Zusatzlich' dla +2 mm regulacji bocznej. Zakres +/-2,0 mm (obie strony) Z KARTY: Katalog i podrecznik Blum 2024/2025 (PL), strona PDF 81 = druk 77, blok 'Regulacja', srodkowa ikona; 71B3550 = kolumna 'Drzwi nakladane' sekcji 'Zawias 110 st.' (PDF 80). Odczyt 2026-10-31."
   },
   "blum_clip_top_half": {
     "id": "blum_clip_top_half",
@@ -150,7 +150,7 @@
     },
     "plate_default": "37/32",
     "side_adjustment_mm": 2.0,
-    "side_adjustment_source": "PRZYJETE jak CLIP top 110 (ta sama baza zawiasu); karty polnakladanego nie sprawdzono."
+    "side_adjustment_source": "Z KARTY: Katalog i podrecznik Blum 2024/2025 (PL), strona PDF 81 = druk 77, blok 'Regulacja' (srodkowa ikona, strzalka w plaszczyznie frontu): +/-2,0 mm. Blok jest wspolny dla calej sekcji 'Zawias 110 st.' (kod DQDELA); strona PDF 80 = druk 76 umieszcza 71B3650 w kolumnie 'Drzwi blizniacze' tej sekcji. Odczyt z obrazu strony 2026-10-31."
   },
   "gtv_prestige": {
     "id": "gtv_prestige",
@@ -347,6 +347,6 @@
     "plate_default": "37/32",
     "price_sku": "BLUM-71B7550",
     "side_adjustment_mm": 2.0,
-    "side_adjustment_source": "PRZYJETE jak CLIP top 110 (ta sama baza zawiasu); karty 155 nie sprawdzono."
+    "side_adjustment_source": "Z KARTY: Katalog i podrecznik Blum 2024/2025 (PL), strona PDF 89 = druk 85, blok 'Regulacja' sekcji 'Zawias 155 st.' (kod DQDHEM), srodkowa ikona: +/-2,0 mm. 71B7550 = kolumna 'Drzwi nakladane, zerowy uskok' tej sekcji (PDF 88 = druk 84). Odczyt z obrazu strony 2026-10-31."
   }
 }
