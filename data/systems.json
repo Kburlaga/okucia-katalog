@@ -122,7 +122,9 @@
     "box_board_thickness_mm": 16.0,
     "nl_depth_clearance_mm": 10.0,
     "slide_screw_second_row_mm": 44.0,
-    "back_wall_fix_from_end_mm": 9.5
+    "back_wall_fix_from_end_mm": 9.5,
+    "push_to_open_depth_mm": 0.0,
+    "push_to_open_depth_source": "Z KARTY + WARSZTAT: karta GTV Axis Pro (s.2) podaje min. glebokosc LT = NL + 5 bez dodatku na push-to-open - mechanizm P2O siedzi w prowadnicy. Potwierdzone w warsztacie (uzytkownik 2026-10-31: szafka RTV, fronty licowane, P2O klika i odjezdza bez zapasu). Do 2026-10-31 aplikacja odejmowala 4 mm przeniesione z katalogu Blum TIP-ON - innego produktu. Osobnej karty kompletu P2O nie czytano."
   },
   "gtv_modern_box_pro": {
     "id": "gtv_modern_box_pro",
@@ -214,7 +216,9 @@
         224.0
       ]
     },
-    "slide_screw_second_row_mm": 49.0
+    "slide_screw_second_row_mm": 49.0,
+    "push_to_open_depth_mm": 4.0,
+    "push_to_open_depth_source": "PRZYJETE - stan sprzed pola (stala 4 mm z katalogu Blum TIP-ON). Karty pod katem push-to-open nie sprawdzono."
   },
   "blum_antaro": {
     "id": "blum_antaro",
@@ -292,7 +296,9 @@
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "slide_screw_positions_known": false,
     "nl_depth_clearance_mm": 3.0,
-    "box_board_thickness_mm": 16.0
+    "box_board_thickness_mm": 16.0,
+    "push_to_open_depth_mm": 4.0,
+    "push_to_open_depth_source": "Katalog Blum 2024/25: wymagana glebokosc zabudowy NL + X + 3 przy BLUMOTION i NL + X + 7 przy TIP-ON (PDF s.443 kontra s.517) - TIP-ON to osobny element za szuflada. Przeniesione z commita Kalkulatora fd60d85 (2026-09-03); stron nie sprawdzano ponownie."
   },
   "gtv_axis_pro_18": {
     "id": "gtv_axis_pro_18",
@@ -397,7 +403,9 @@
       ]
     },
     "nl_depth_clearance_mm": 10.0,
-    "slide_screw_second_row_mm": 44.0
+    "slide_screw_second_row_mm": 44.0,
+    "push_to_open_depth_mm": 0.0,
+    "push_to_open_depth_source": "Z KARTY + WARSZTAT: jak gtv_axis_pro - karta wariantu 18 podaje NL + 10 na glebokosc korpusu (s.7, nadruk) bez dodatku na push-to-open; mechanizm P2O w prowadnicy. Potwierdzone w warsztacie (uzytkownik 2026-10-31). Do 2026-10-31 aplikacja odejmowala 4 mm z katalogu Blum TIP-ON."
   },
   "atm_futura": {
     "id": "atm_futura",
@@ -503,7 +511,9 @@
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Katalog ATM SZUFLADY FUTURA (PDF producenta, 16 str.). Modele PK-1600 H90, PK-1601 H122, PK-1602 H172, PK-1603 H203, NL 300-550, nosnosc 40 kg, 80 000 cykli. UWAGA: producent podaje rozkroj dna i tylu dla PLYTY 16 mm (naglowek ROZKROJ DNA I TYLNEJ SCIANY (PLYTA 16mm) na kazdej stronie modelu), mimo ze sprzedawcy opisuja linie Futura Evo jako do plyty 18 mm. To nie jest to samo i wariant na plyte 18 wymaga osobnej karty producenta.",
     "nl_depth_clearance_mm": 3.0,
-    "slide_screw_second_row_mm": 45.0
+    "slide_screw_second_row_mm": 45.0,
+    "push_to_open_depth_mm": 4.0,
+    "push_to_open_depth_source": "PRZYJETE - stan sprzed pola (stala 4 mm z katalogu Blum TIP-ON). Karty pod katem push-to-open nie sprawdzono."
   },
   "atm_futura_evo": {
     "id": "atm_futura_evo",
@@ -609,7 +619,9 @@
     "pricing_sku_prefix": "ATM-EVO",
     "pricing_sku_source": "Klucz cennika aplikacji (PricingItem.sku = PREFIX-NL). Nie jest to SKU producenta.",
     "source": "Instrukcja ATM FUTURA EVO (PDF producenta). Modele PK-1800 H90, PK-1801 H122, PK-1802 H172, PK-1803 H203; NL 300-550; nosnosc 40 kg; 80 000 cykli; regulacja 3D. Naglowek 'Wymiary ciecia dla plyty 18mm' i grubosc 18 na rysunku dna i tylu - to jest wariant NA PLYTE 18, w odroznieniu od linii FUTURA (PK-16xx), ktora producent rozkraja z plyty 16. Wzory ciecia sa w OBU liniach identyczne (dno LW-75 na NL-24, tyl LW-87, wysokosci 84/116/167/199) - rozni sie grubosc plyty i minimalna wysokosc korpusu (125/157/207/239 zamiast 112/144/194/230).",
-    "slide_screw_second_row_mm": 45.0
+    "slide_screw_second_row_mm": 45.0,
+    "push_to_open_depth_mm": 4.0,
+    "push_to_open_depth_source": "PRZYJETE - stan sprzed pola (stala 4 mm z katalogu Blum TIP-ON). Karty pod katem push-to-open nie sprawdzono."
   },
   "gtv_kulkowa_h45": {
     "id": "gtv_kulkowa_h45",
@@ -721,6 +733,8 @@
     "pricing_sku_prefix": "PK-PRO-H45",
     "pricing_sku_source": "SKU producenta GTV: PK-PRO-H45-<NL>.",
     "source": "Szuflada BUDOWANA Z PLYTY na prowadnicach kulkowych GTV H45 PRO. Skladana z pieciu formatek, nie z gotowej skrzynki. Zrodla sa dwa i celowo rozdzielone. Z KARTY GTV (Furniture Accessories 2025, PDF s.148): grubosc prowadnicy 12,7 mm na strone, wiec szerokosc skrzynki = swiatlo - 25,4; wysokosc profilu 44,5 mm, czyli dolna granica wysokosci boku; NL 200-750; nosnosc 50 kg; pozycje wkretow w boku szafki (SKU PK-PRO-H45-*). Z KSIAZKI Wasiaka (s.111, sposob skladania): boki laczy sie z przodem i tylem licujac je GORNA krawedzia, a dno przykreca od spodu wkretami 3,5 x 35 -- stad dno ma wymiar zewnetrznego obrysu skrzynki, bo lezy pod wszystkim. Wybor potwierdzony praktyka: dno 16-18 mm ma wlasna sztywnosc i trzyma wkrety, wiec nie wymaga nuty (ta jest konieczna dopiero przy cienkim dnie z HDF lub sklejki). UWAGA -- CZEGO NIE MA W ZADNEJ KARCIE: glebokosc skrzynki przyjeta rowna NL, bo przy montazu BOCZNYM prowadnica biegnie wzdluz calego boku szuflady. GTV podaje tylko regule stabilnosci (szerokosc szuflady <= NL), a nie wzor na glebokosc. To jest przyjecie aplikacji, nie cytat. LICZB WASIAKA NIE MIESZAC Z TYMI: jego komoda stoi na prowadnicy DOLNEGO montazu (Blum TANDEM -- s.112 wprost), gdzie prowadnica nie zabiera szerokosci z bokow i dlatego wychodzi mu swiatlo - 13. Przy kulkowej bocznej 12,7 mm na strone taka szuflada nie weszlaby w korpus.",
-    "drilling_source": "Pozycje wkretow w boku szafki POTWIERDZONE karta GTV (PDF s.148), odczytane z wektorow -- szczegoly w rekordach SKU PK-PRO-H45-*. Dlatego slide_screw_positions_known = true, w odroznieniu od Bluma, ktory odsyla do wzornika."
+    "drilling_source": "Pozycje wkretow w boku szafki POTWIERDZONE karta GTV (PDF s.148), odczytane z wektorow -- szczegoly w rekordach SKU PK-PRO-H45-*. Dlatego slide_screw_positions_known = true, w odroznieniu od Bluma, ktory odsyla do wzornika.",
+    "push_to_open_depth_mm": 4.0,
+    "push_to_open_depth_source": "PRZYJETE - stan sprzed pola (stala 4 mm z katalogu Blum TIP-ON). Prowadnica kulkowa nie ma P2O w sobie; karty popychacza nie sprawdzono."
   }
 }
