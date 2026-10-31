@@ -84,7 +84,9 @@
       "24": 0.5,
       "25": 0.5,
       "26": 0.5
-    }
+    },
+    "side_adjustment_mm": 2.0,
+    "side_adjustment_source": "Karta Blum TD-032/1DE CLIP top BLUMOTION 110: wiersz 'Zusatzlich' dla +2 mm regulacji bocznej; -2 przyjete symetrycznie."
   },
   "blum_clip_top_half": {
     "id": "blum_clip_top_half",
@@ -146,7 +148,9 @@
         "opis": "prowadnik krzyżakowy — najczęstszy"
       }
     },
-    "plate_default": "37/32"
+    "plate_default": "37/32",
+    "side_adjustment_mm": 2.0,
+    "side_adjustment_source": "PRZYJETE jak CLIP top 110 (ta sama baza zawiasu); karty polnakladanego nie sprawdzono."
   },
   "gtv_prestige": {
     "id": "gtv_prestige",
@@ -194,7 +198,9 @@
         "opis": "prowadnik z karty (A = 37 dla zawiasu nakladanego)"
       }
     },
-    "plate_default": "A=37"
+    "plate_default": "A=37",
+    "side_adjustment_mm": 1.5,
+    "side_adjustment_source": "Instrukcja GTV Prestige+ (ZM-Prestige-), 'regulacja +/-1,5 mm' -- z karty."
   },
   "hettich_sensys": {
     "id": "hettich_sensys",
@@ -274,7 +280,9 @@
         "opis": "prowadnik z karty (A = 37 + 1,5), wysokosc H = 2"
       }
     },
-    "plate_default": "A=38,5"
+    "plate_default": "A=38,5",
+    "side_adjustment_mm": 1.5,
+    "side_adjustment_source": "Instrukcja GTV ZP-COCAKT165H2, 'regulacja +/-1,5 mm' -- z karty."
   },
   "blum_clip_top_155": {
     "id": "blum_clip_top_155",
@@ -337,6 +345,8 @@
       }
     },
     "plate_default": "37/32",
-    "price_sku": "BLUM-71B7550"
+    "price_sku": "BLUM-71B7550",
+    "side_adjustment_mm": 2.0,
+    "side_adjustment_source": "PRZYJETE jak CLIP top 110 (ta sama baza zawiasu); karty 155 nie sprawdzono."
   }
 }
